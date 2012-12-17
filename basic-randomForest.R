@@ -27,7 +27,7 @@ test$embarked <- factor(test$embarked)
 ### Create randomForest object and make prediction
 ###
 
-# Create forest without name, tircket, cabin, or embarked
+# Create forest without name, ticket, cabin, or embarked
 forest <- randomForest(factor(survived) ~ . -name -ticket -cabin -embarked,
                        data = train_tidy, 
                        ntree = 5000,
