@@ -7,12 +7,11 @@ test <- read.csv("test.csv", stringsAsFactors = F)   # 418 obs
 
 # Look at proportion of survival by sex
 qplot(factor(survived), data = train, fill = sex) + facet_wrap(~ sex)
-
 male <- train$sex == "male"
 female <- train$sex == "female"
 lived <- train$survived == "1"
-prop.survived.male <- length(train[male & lived, 1]) / length(train[male, 1])
-prop.survived.female <- length(train[female & lived, 1]) / length(train[female, 1])
+(length(train[male & lived, 1]) / length(train[male, 1])) * 100
+(length(train[female & lived, 1]) / length(train[female, 1])) * 100
 
 # prop male survived: 19%; prop female survived: 74%
 # We will say that all women are going to live; all men are going to die
@@ -27,14 +26,18 @@ adult <- train$age > 18
 child <- train$age <= 18
 train$age.bin[adult] <- "adult"
 train$age.bin[child] <- "child"
-qplot(sex, data = train, fill = age.bin) + facet_wrap(~ survived)
-length(train[adult & male & lived, 1]) / length(train[adult & male, 1])
-length(train[adult & female & lived, 1]) / length(train[adult & female, 1])
-# Age doesn't give much additional information regarding survivability by sex 
+train$age.bin[!adult & !child] <- NA
+qplot(factor(survived), data = train, fill = sex) + facet_wrap(~ age.bin)
+length(train[adult & male & lived & !is.na(train$age), 1]) / 
+  length(train[adult & male & !is.na(train$age), 1])
+length(train[adult & female & lived & !is.na(train$age), 1]) /
+  length(train[adult & female & !is.na(train$age), 1])
+# Age doesn't give much additional information (than sex) regarding survivability 
 
-# Improve the prediction by considering Class
+# Improve the prediction by considering Passenger Class
 qplot(sex, data = train, fill = factor(pclass)) + facet_wrap(~ survived)
-# Consider ticket price by bining from <10, 10-20, 20-30, >30
+qplot(factor(survived), data = train) + facet_wrap(~ pclass)
+# Consider Fare price by bining from <10, 10-20, 20-30, >30
 bin.1 <- train$fare < 10
 bin.2 <- 10 <= train$fare & train$fare < 20
 bin.3 <- 20 <= train$fare & train$fare <= 30
