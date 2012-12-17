@@ -6,9 +6,7 @@ train <- read.csv("train.csv", stringsAsFactors = F) # 891 obs
 test <- read.csv("test.csv", stringsAsFactors = F)   # 418 obs
 
 # Look at proportion of survival by sex
-qplot(sex, data = train, fill = sex) + facet_wrap(~ survived)
-qplot(survived, data = train, fill = sex)
-ggplot(aes(x = survived), data = train) + geom_bar() 
+qplot(factor(survived), data = train, fill = sex) + facet_wrap(~ sex)
 
 male <- train$sex == "male"
 female <- train$sex == "female"
