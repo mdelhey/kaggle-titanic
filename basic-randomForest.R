@@ -1,6 +1,5 @@
-# baisc randomForest model (aka baby's first randomForest)
+# Goal: construct baisc randomForest model (aka baby's first randomForest)
 library(randomForest)
-source("helpers.R")
 
 train <- read.csv("train.csv", stringsAsFactors = F)  # 891 obs
 test <- read.csv("test.csv", stringsAsFactors = F)    # 418 obs

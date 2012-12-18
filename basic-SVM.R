@@ -1,4 +1,4 @@
-# baisc Support vector Machine
+# Goal: construct baisc Support vector Machine model
 library(kernlab)
 
 train <- read.csv("train.csv", stringsAsFactors = F)  # 891 obs
@@ -32,7 +32,7 @@ test$sibsp <- factor(test$sibsp)
 test$parch <- factor(test$parch)
 test$embarked <- factor(test$embarked)
 
-# Create the SVM model
+# Create the SVM model with only sex, age, & fare
 svm.model <- ksvm(factor(survived) ~ factor(sex) + age + fare, data = train)
 
 # Make a prediction with our SVM model
