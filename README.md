@@ -18,4 +18,7 @@ Entry in the Titanic: Machine Learning from Disaster competition @ kaggle.com.
 <ul>
 <li>Submissions: <code>babys-first-forest.csv</code></li>
 </ul>
+<li><code><strong>basic-SVM.R</strong></code>: A very basic Support Vector Machine model.</li>
+<ul>
+<li>Submissions: <code>svm-model-01.csv</code></li>
 </ul>
