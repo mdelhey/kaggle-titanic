@@ -1,5 +1,4 @@
-# Kaggle - Titanic: Machine Learning from Disaster
-# Getting started with Excel in R
+# Goal: Compute Kaggle's Getting started with Excel using R
 library(ggplot2)
 
 train <- read.csv("train.csv", stringsAsFactors = F) # 891 obs
@@ -34,9 +33,7 @@ length(train[adult & female & lived & !is.na(train$age), 1]) /
   length(train[adult & female & !is.na(train$age), 1])
 # Age doesn't give much additional information (than sex) regarding survivability 
 
-# Improve the prediction by considering Passenger Class
-qplot(sex, data = train, fill = factor(pclass)) + facet_wrap(~ survived)
-qplot(factor(survived), data = train) + facet_wrap(~ pclass)
+# Improve the prediction by considering Passenger Class & Fare
 # Consider Fare price by bining from <10, 10-20, 20-30, >30
 bin.1 <- train$fare < 10
 bin.2 <- 10 <= train$fare & train$fare < 20
@@ -46,8 +43,13 @@ train$fare.bin[bin.1] <- "<10"
 train$fare.bin[bin.2] <- "10-20"
 train$fare.bin[bin.3] <- "20-30"
 train$fare.bin[bin.4] <- ">30"
-qplot(sex, data = train, fill = factor(fare.bin)) + facet_wrap(~ survived)
-qplot(factor(survived), data = train, fill = factor(fare.bin)) + facet_wrap(~ sex)
+train$fare.bin <- factor(train$fare.bin, levels = c("<10", "10-20", "20-30", ">30"))
+qplot(factor(survived), data = train, fill = fare.bin) + facet_wrap(~ pclass)
 
-length(train[adult & male & lived, 1]) / length(train[adult & male, 1])
-
+# Make the improved genderclass-based prediction
+third <- subset(train, pclass == "3")
+qplot(factor(survived), data = third, fill = sex) + facet_wrap(~ fare.bin)
+test$survived[test$sex == "male"] <- 0
+test$survived[test$sex == "female"] <- 1
+test$survived[test$sex == "female" & test$pclass == "3" & test$fare >= "20"] <- 0
+write.csv(test, "genderbased-classmodel.csv")
