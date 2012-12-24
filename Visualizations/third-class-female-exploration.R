@@ -2,6 +2,7 @@
 #       third class who paid more for their ticket more likely not to survive?
 library(ggplot2)
 
+setwd("C:/users/matt/kaggle-titanic/Data/")
 train <- read.csv("train.csv", stringsAsFactors = F) # 891 obs
 test <- read.csv("test.csv", stringsAsFactors = F)   # 418 obs
 
