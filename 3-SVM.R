@@ -40,3 +40,50 @@ test$survived <- predict(svm.model, test, type = "response")
 
 # save csv file for submission
 write.csv(test, "svm-model-01.csv")
+
+###
+### svm
+###
+library(kernlab)
+
+svm.model <- ksvm(survived ~ pclass + sex + age + 
+                    sibsp + parch + embarked, data = train)
+
+# Check to see how many predictions our forest gets
+# correct in the test data set. This gives us a rough 
+# estimate of how our model might perform
+train$survived_pred <- predict(svm.model, train, type = "response")
+which(train$survived_pred != train$survived)
+
+###
+### knn
+###
+library(class)
+
+knn(train, test, factor(rep(train$survived, 1)))
+
+###
+### Conditional Tree 
+###
+library(party)
+
+tree <- ctree(survived ~ pclass + sex + age + 
+                sibsp + parch + embarked, data = train)
+
+# Check to see how many predictions our forest gets
+# correct in the test data set. This gives us a rough 
+# estimate of how our model might perform
+train$survived_pred <- predict(tree, train)
+which(train$survived_pred != train$survived)
+
+logit <- glm(survived ~ pclass + sex + age + sibsp + 
+               parch + embarked, family = binomial(logit), data = train)
+pr <- predict(logit, train)
+pr[pr >= 0] <- 1
+pr[pr < 0] <- 0
+
+# Check to see how many predictions our forest gets
+# correct in the test data set. This gives us a rough 
+# estimate of how our model might perform
+train$survived_pred <- pr
+which(train$survived_pred != train$survived)
