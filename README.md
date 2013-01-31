@@ -11,9 +11,24 @@ Entry in the Titanic: Machine Learning from Disaster competition @ kaggle.com.
 
 <h2>R files and submissions</h2>
 <ul>
-<li><code>1-clean.r</code>: fixes data structures and missing values</li>
-<li><code>2-randomForest</code>: creates randomForest model</li>
-<li><code>3-</code></li>
-<li><code>4-</code></li>
-<li><code>5-model_testing</code>: evaluates the accuracy of models</li>
+<li><code>1-clean.r</code>: 
+  <ul>
+  <li>fixes data structures and missing values</li>
+  </ul>
+<li><code>2-randomForest</code>:
+  <ul>
+  <li>creates randomForest model</li>
+  </ul>
+<li><code>3-SVM</code>:
+  <ul>
+  <li>creates Support Vector Machine model</li>
+  </ul>
+<li><code>4-probit</code>:
+  <ul>
+  <li>creates probability unit model</li>
+  </ul>
+<li><code>5-model_testing</code>: 
+  <ul>
+  <li>evaluates the accuracy of model</li>
+  </ul>
 </ul>
