@@ -1,6 +1,12 @@
 <h1>kaggle-titanic</h1>
 ==============
 Entry in the Titanic: Machine Learning from Disaster competition @ kaggle.com.
+<br />
+Authors:
+<ul>
+<li>Matt Delhey; <a href="mattdelhey.com">mattdelhey.com</a></li>
+<li>Frank Portman; <a href="fportman.com">fportman.com</a></li>
+</ul>
 <br /><br />
 
 <h2>R files and submissions</h2>
