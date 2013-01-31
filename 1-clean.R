@@ -1,14 +1,14 @@
-# Goal: (1) Clean the data sets
-#           - fix missing values
-#           - fix data structures
-#           - save new data sets for future analysis
-# Output: (1) Saves two new files for all further analysis: 
-#           - test_clean.RData 
-#           - train_clean.RData
-#         (2) Also saves three csv files for archive purposes
-#           - train_clean.csv
-#           - test_clean.csv
-#           - full.csv
+# Goal:         (1) Clean the data sets
+#                   - fix missing values
+#                   - fix data structures
+#                   - save new data sets for future analysis
+# Output:       (1) Saves two new files for all further analysis: 
+#                   - test_clean.RData 
+#                   - train_clean.RData
+#               (2) Also saves three csv files for archive purposes
+#                   - train_clean.csv
+#                   - test_clean.csv
+#                   - full.csv
 library(plyr)
 
 # Load the data sets
