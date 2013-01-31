@@ -1,6 +1,6 @@
-# Goal: (1) Construct basic randomForest models from the data
-#       (2) Select the best model (Model selection)
-#       (3) Save a prediction with our best randomForest
+# Goal:     (1) Construct basic randomForest models from the data
+#           (2) Select the best model (Model selection)
+#           (3) Save a prediction with our best randomForest
 library(randomForest)
 library(plyr)
 
