@@ -1,53 +1,20 @@
 # Goal: construct baisc Support vector Machine model
 library(kernlab)
 
-train <- read.csv("train.csv", stringsAsFactors = F)  # 891 obs
-test <- read.csv("test.csv", stringsAsFactors = F)    # 418 obs
+# Load in the cleaned data sets
+load("Data/train_clean.RData")  # 891 obs
+load("Data/test_clean.RData")   # 418 obs
 
 ###
-### Clean the data set before running SVC model
-### 
+### Create SVM model
+###
 
-# Remove name, ticket, cabin
-train <- train[ , -3] # remove name
-train <- train[ , -7] # remove ticket
-train <- train[ , -8] # remove cabin
-
-# Replace missing values in AGE and FARE with mean
-train$age[is.na(train$age)] <- mean(train$age, na.rm = TRUE)
-train$fare[is.na(train$fare)] <- mean(train$fare, na.rm = TRUE)
-test$age[is.na(test$age)] <- mean(test$age, na.rm = TRUE)
-test$fare[is.na(test$fare)] <- mean(test$fare, na.rm = TRUE)
-
-# Convert survived, sex, pclass, sibsp, parch & embarked to factors
-train$survived <- factor(train$survived)
-train$sex <- factor(train$sex)
-train$pclass <- factor(train$pclass)
-train$sibsp <- factor(train$sibsp)
-train$parch <- factor(train$parch)
-train$embarked <- factor(train$embarked)
-test$sex <- factor(test$sex)
-test$pclass <- factor(test$pclass)
-test$sibsp <- factor(test$sibsp)
-test$parch <- factor(test$parch)
-test$embarked <- factor(test$embarked)
-
-# Create the SVM model with only sex, age, & fare
-svm.model <- ksvm(factor(survived) ~ factor(sex) + age + fare, data = train)
-
-# Make a prediction with our SVM model
-test$survived <- predict(svm.model, test, type = "response")
-
-# save csv file for submission
-write.csv(test, "svm-model-01.csv")
+# Create the SVM model with SEX, AGE, FARE
+svm.model <- ksvm(survived ~ sex + age + fare, data = train)
 
 ###
-### svm
+### Model Selection and Improvement
 ###
-library(kernlab)
-
-svm.model <- ksvm(survived ~ pclass + sex + age + 
-                    sibsp + parch + embarked, data = train)
 
 # Check to see how many predictions our forest gets
 # correct in the test data set. This gives us a rough 
@@ -55,35 +22,16 @@ svm.model <- ksvm(survived ~ pclass + sex + age +
 train$survived_pred <- predict(svm.model, train, type = "response")
 which(train$survived_pred != train$survived)
 
-###
-### knn
-###
-library(class)
-
-knn(train, test, factor(rep(train$survived, 1)))
+# Calculate our % accuracy on the train data set
+((length(which(train$survived_pred == train$survived))) /
+   length(train$survived)) * 100
 
 ###
-### Conditional Tree 
+### Saving our model and prediction as a new CSV
 ###
-library(party)
 
-tree <- ctree(survived ~ pclass + sex + age + 
-                sibsp + parch + embarked, data = train)
+# Make a prediction with our SVM model
+test$survived <- predict(svm.model, test, type = "response")
 
-# Check to see how many predictions our forest gets
-# correct in the test data set. This gives us a rough 
-# estimate of how our model might perform
-train$survived_pred <- predict(tree, train)
-which(train$survived_pred != train$survived)
-
-logit <- glm(survived ~ pclass + sex + age + sibsp + 
-               parch + embarked, family = binomial(logit), data = train)
-pr <- predict(logit, train)
-pr[pr >= 0] <- 1
-pr[pr < 0] <- 0
-
-# Check to see how many predictions our forest gets
-# correct in the test data set. This gives us a rough 
-# estimate of how our model might perform
-train$survived_pred <- pr
-which(train$survived_pred != train$survived)
+# save csv file for submission
+write.csv(test, "Submissions/svm-model-02.csv")

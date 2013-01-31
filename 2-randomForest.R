@@ -9,13 +9,14 @@ load("Data/train_clean.RData")  # 891 obs
 load("Data/test_clean.RData")   # 418 obs
 
 ###
-### Create randomForest object and make prediction
+### Create randomForest model
 ###
 
-# Create forest without name, ticket, cabin, or embarked
-forest <- randomForest(survived ~ pclass + sex + age + 
-            sibsp + parch + embarked, data = train,
-            ntree = 100, importance = TRUE)
+# Create random forest based on PCLASS, SEX, and FARE
+forest <- randomForest(survived ~ pclass + sex + fare, data = train,
+                         ntree = 15000, importance = TRUE)
+
+summary(forest)
 
 # Extract the importance of each variable
 importance(forest)
