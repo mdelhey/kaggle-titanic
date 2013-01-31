@@ -2,6 +2,7 @@
 #                   - fix missing values
 #                   - fix data structures
 #                   - save new data sets for future analysis
+#
 # Output:       (1) Saves two new files for all further analysis: 
 #                   - test_clean.RData 
 #                   - train_clean.RData
