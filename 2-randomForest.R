@@ -22,20 +22,6 @@ summary(forest)
 importance(forest)
 
 ###
-### Model Selection and Improvement
-###
-
-# Check to see how many predictions our forest gets
-# correct in the test data set. This gives us a rough 
-# estimate of how our model might perform
-train$survived_pred <- predict(forest, train, type = "class")
-which(train$survived_pred != train$survived)
-
-# Calculate our % accuracy on the train data set
-((length(which(train$survived_pred == train$survived))) /
-  length(train$survived)) * 100
-
-###
 ### Saving our model and prediction as a new CSV
 ###
 
