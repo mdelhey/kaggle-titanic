@@ -68,6 +68,8 @@ mean(errors)
 ### Leave-one-out
 ###
 
+# Special case of cross validation where k = n, where n = # of data points. 
+
 ###
 ### 0.632 Bootstrap
 ###
