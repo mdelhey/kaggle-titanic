@@ -13,7 +13,7 @@ load("Data/test_clean.RData")   # 418 obs
 ###
 
 # Create random forest based on PCLASS, SEX, and FARE
-forest <- randomForest(survived ~ pclass + sex + fare + age + embarked, data = train,
+forest <- randomForest(survived ~ sex + pclass + fare, data = train,
                          ntree = 15000, importance = TRUE)
 
 summary(forest)
@@ -32,4 +32,4 @@ train$survived_pred <- predict(forest, train)
 test$survived <- predict(forest, test)
 
 # save csv file for submission
-write.csv(test, "Submissions/randomForest-02.csv")
+write.csv(test, "Submissions/randomForest-03.csv")

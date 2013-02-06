@@ -10,8 +10,7 @@ load("Data/test_clean.RData")   # 418 obs
 ###
 
 # Create forest without name, ticket, cabin, or embarked
-probit <- glm(survived ~ pclass + sex + age + sibsp + parch + 
-                embarked + fare, data = train,
+probit <- glm(survived ~ sex + pclass + fare, data = train,
                 family = binomial(link = "probit"))
 summary(probit)
 
@@ -31,7 +30,7 @@ which(train$survived_pred != train$survived)
 ### Saving our model and prediction as a new CSV
 ###
 
-# Make a prediction with our randomForest
+# Make a prediction with our probit
 test$survived <- predict(probit, test)
 test$survived[test$survived >= 0.5] <- 1
 test$survived[test$survived < 0.5] <- 0
