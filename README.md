@@ -3,10 +3,9 @@
 Entry in the Titanic: Machine Learning from Disaster competition @ kaggle.com.
 <br />
 <br />
-<strong>Authors:</strong>
+<strong>Author:</strong>
 <ul>
-<li>Matt Delhey; <a href="mattdelhey.com">mattdelhey.com</a></li>
-<li>Frank Portman; <a href="fportman.com">fportman.com</a></li>
+<li>Matt Delhey; <a href="http://mattdelhey.com">mattdelhey.com</a></li>
 </ul>
 
 <h2>R files and submissions</h2>
