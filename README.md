@@ -1,6 +1,6 @@
 <h1>kaggle-titanic</h1>
 ==============
-Entry in the Titanic: Machine Learning from Disaster competition @ kaggle.com.
+Entry in the Titanic: Machine Learning from Disaster competition @ <a href="http://www.kaggle.com">kaggle.com</a>.
 <br />
 <br />
 <strong>Author:</strong>
