@@ -42,11 +42,19 @@ test$embarked <- factor(test$embarked)
 # Combine the data sets for age/fare modeling
 full <- join(test, train, type = "full")
 
-# Create models for predicting missing values in AGE and FARE
+# Remove NA's in AGE and FARE
+full.age <- full[!is.na(full$age), ]
+full.fare <- full[!is.na(full$fare), ]
+
+# Create LM models for predicting missing values in AGE and FARE
 age.mod <- lm(age ~ pclass + sex +
                 sibsp + parch + fare, data = full)
 fare.mod<- lm(fare ~ pclass + sex +
                 sibsp + parch + age, data = full)
+
+# Create RF models for predicting missing values in AGE and FARE
+#age.rf <- randomForest(age ~ pclass + sex + sibsp + parch + fare + embarked, data = full.age, 
+                       ntree = 1000, importance = TRUE)
 
 # Replace missing values in AGE and FARE with prediction
 train$age[is.na(train$age)] <- predict(age.mod, train)
@@ -65,15 +73,30 @@ train$embarked[train$embarked == ""] <- "S"
 # fare-distance = fare - mean(fare of pclass)
 # Are those who pay less than the average for a ticket less likely to survive?
 
+# Find the mean fare for each pclass
+class1 <- subset(full, pclass == 1)
+class2 <- subset(full, pclass == 2)
+class3 <- subset(full, pclass == 3)
+fare1 <- mean(class1$fare, na.rm = TRUE)
+fare2 <- mean(class2$fare, na.rm = TRUE)
+fare3 <- mean(class3$fare, na.rm = TRUE)
+
+# Create fare_avg column
+train$fare_avg[train$pclass == 1] <- fare1
+train$fare_avg[train$pclass == 2] <- fare2
+train$fare_avg[train$pclass == 3] <- fare3
+test$fare_avg[test$pclass == 1] <- fare1
+test$fare_avg[test$pclass == 2] <- fare2
+test$fare_avg[test$pclass == 3] <- fare3
+
 # Create fare-distance metric for Train
-#new <- ddply(train, "pclass", transform, fare_avg = mean(fare))
-#new2 <- transform(new, fare_distance = fare - fare_avg)
-#train <- new2[, -12]
+train <- transform(train, fare_distance = fare - fare_avg)
+train <- train[, !names(train) %in% c("fare_avg")]
 
 # Create fare-distance metric for Test
-#new <- ddply(test, "pclass", transform, fare_avg = mean(fare))
-#new2 <- transform(new, fare_distance = fare - fare_avg)
-#test <- new2[, -11]
+test <- transform(test, fare_distance = fare - fare_avg)
+test <- test[, !names(test) %in% c("fare_avg")]
+
 
 ###
 ### Saving new data sets

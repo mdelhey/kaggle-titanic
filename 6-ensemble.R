@@ -42,4 +42,4 @@ combined[combined >= 5] <- 1
 # Make our ensamble prediction
 test$survived <- combined
 
-write.csv(test, "Submissions/ensemble-02.csv")
+write.csv(test, "Submissions/ensemble-03.csv")

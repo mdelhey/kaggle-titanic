@@ -36,4 +36,4 @@ test$survived[test$survived >= 0.5] <- 1
 test$survived[test$survived < 0.5] <- 0
 
 # save csv file for submission
-write.csv(test, "Submissions/probit.csv")
+write.csv(test, "Submissions/probit-04.csv")
