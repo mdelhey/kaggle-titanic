@@ -116,7 +116,7 @@
 "115","1","Straus, Mrs. Isidor (Rosalie Ida Blun)","female",63,1,0,"PC 17483",221.7792,"C55 C57","S",1
 "116","3","Chronopoulos, Mr. Demetrios","male",18,1,0,"2680",14.4542,"","C",0
 "117","3","Thomas, Mr. John","male",40.0464684110242,0,0,"2681",6.4375,"","C",0
-"118","3","Sandstrom, Miss. Beatrice Irene","female",1,1,1,"PP 9549",16.7,"G6","S",0
+"118","3","Sandstrom, Miss. Beatrice Irene","female",1,1,1,"PP 9549",16.7,"G6","S",1
 "119","1","Beattie, Mr. Thomson","male",36,0,0,"13050",75.2417,"C6","C",0
 "120","2","Chapman, Mrs. John Henry (Sara Elizabeth Lawry)","female",29,1,0,"SC/AH 29037",26,"","S",1
 "121","2","Watt, Miss. Bertha J","female",12,0,0,"C.A. 33595",15.75,"","S",1
@@ -139,7 +139,7 @@
 "138","2","Schmidt, Mr. August","male",26,0,0,"248659",13,"","S",0
 "139","3","Drapkin, Miss. Jennie","female",23,0,0,"SOTON/OQ 392083",8.05,"","S",0
 "140","3","Goodwin, Mr. Charles Frederick","male",40,1,6,"CA 2144",46.9,"","S",0
-"141","3","Goodwin, Miss. Jessie Allis","female",10,5,2,"CA 2144",46.9,"","S",0
+"141","3","Goodwin, Miss. Jessie Allis","female",10,5,2,"CA 2144",46.9,"","S",1
 "142","1","Daniels, Miss. Sarah","female",33,0,0,"113781",151.55,"","S",1
 "143","1","Ryerson, Mr. Arthur Larned","male",61,1,3,"PC 17608",262.375,"B57 B59 B63 B66","C",0
 "144","2","Beauchamp, Mr. Henry James","male",28,0,0,"244358",26,"","S",0
@@ -212,7 +212,7 @@
 "211","3","Andersen, Mr. Albert Karvin","male",32,0,0,"C 4001",22.525,"","S",0
 "212","3","Finoli, Mr. Luigi","male",27.6814077459123,0,0,"SOTON/O.Q. 3101308",7.05,"","S",0
 "213","2","Deacon, Mr. Percy William","male",17,0,0,"S.O.C. 14879",73.5,"","S",0
-"214","2","Howard, Mrs. Benjamin (Ellen Truelove Arman)","female",60,1,0,"24065",26,"","S",1
+"214","2","Howard, Mrs. Benjamin (Ellen Truelove Arman)","female",60,1,0,"24065",26,"","S",0
 "215","3","Andersson, Miss. Ida Augusta Margareta","female",38,4,2,"347091",7.775,"","S",0
 "216","1","Head, Mr. Christopher","male",42,0,0,"113038",42.5,"B11","S",0
 "217","3","Mahon, Miss. Bridget Delia","female",29.5633724718617,0,0,"330924",7.8792,"","Q",0
@@ -262,7 +262,7 @@
 "261","3","de Messemaeker, Mr. Guillaume Joseph","male",36.5,1,0,"345572",17.4,"","S",0
 "262","3","Nilsson, Mr. August Ferdinand","male",21,0,0,"350410",7.8542,"","S",0
 "263","2","Wells, Mrs. Arthur Henry (Addie"" Dart Trevaskis)""","female",29,0,2,"29103",23,"","S",1
-"264","3","Klasen, Miss. Gertrud Emilia","female",1,1,1,"350405",12.1833,"","S",0
+"264","3","Klasen, Miss. Gertrud Emilia","female",1,1,1,"350405",12.1833,"","S",1
 "265","2","Portaluppi, Mr. Emilio Ilario Giuseppe","male",30,0,0,"C.A. 34644",12.7375,"","C",0
 "266","3","Lyntakoff, Mr. Stanko","male",27.2540754607608,0,0,"349235",7.8958,"","S",0
 "267","1","Chisholm, Mr. Roderick Robert Crispin","male",32.2008679614332,0,0,"112051",0,"","S",0
@@ -282,8 +282,8 @@
 "281","3","Oreskovic, Miss. Jelka","female",23,0,0,"315085",8.6625,"","S",0
 "282","3","Peacock, Master. Alfred Edward","male",0.75,1,1,"SOTON/O.Q. 3101315",13.775,"","S",0
 "283","3","Fleming, Miss. Honora","female",27.6810192632559,0,0,"364859",7.75,"","Q",0
-"284","3","Touma, Miss. Maria Youssef","female",9,1,1,"2650",15.2458,"","C",0
-"285","3","Rosblom, Miss. Salli Helena","female",2,1,1,"370129",20.2125,"","S",0
+"284","3","Touma, Miss. Maria Youssef","female",9,1,1,"2650",15.2458,"","C",1
+"285","3","Rosblom, Miss. Salli Helena","female",2,1,1,"370129",20.2125,"","S",1
 "286","3","Dennis, Mr. William","male",36,0,0,"A/5 21175",7.25,"","S",0
 "287","3","Franklin, Mr. Charles (Charles Fardon)","male",32.2185040561752,0,0,"SOTON/O.Q. 3101314",7.25,"","S",0
 "288","1","Snyder, Mr. John Pillsbury","male",24,1,0,"21228",82.2667,"B45","S",0
@@ -353,7 +353,7 @@
 "352","2","Stokes, Mr. Philip Joseph","male",25,0,0,"F.C.C. 13540",10.5,"","S",0
 "353","2","Dibden, Mr. William","male",18,0,0,"S.O.C. 14879",73.5,"","S",0
 "354","2","Herman, Mr. Samuel","male",49,1,2,"220845",65,"","S",0
-"355","3","Dean, Miss. Elizabeth Gladys Millvina""""","female",0.17,1,2,"C.A. 2315",20.575,"","S",0
+"355","3","Dean, Miss. Elizabeth Gladys Millvina""""","female",0.17,1,2,"C.A. 2315",20.575,"","S",1
 "356","1","Julian, Mr. Henry Forbes","male",50,0,0,"113044",26,"E60","S",0
 "357","1","Brown, Mrs. John Murray (Caroline Lane Lamson)","female",59,2,0,"11769",51.4792,"C101","S",1
 "358","3","Lockyer, Mr. Edward","male",38.5212354572965,0,0,"1222",7.8792,"","S",0
@@ -408,7 +408,7 @@
 "407","2","Ware, Mr. William Jeffery","male",23,1,0,"28666",10.5,"","S",0
 "408","1","Widener, Mr. George Dunton","male",50,1,1,"113503",211.5,"C80","C",0
 "409","3","Riordan, Miss. Johanna Hannah""""","female",37.980251140253,0,0,"334915",7.7208,"","Q",0
-"410","3","Peacock, Miss. Treasteall","female",3,1,1,"SOTON/O.Q. 3101315",13.775,"","S",0
+"410","3","Peacock, Miss. Treasteall","female",3,1,1,"SOTON/O.Q. 3101315",13.775,"","S",1
 "411","3","Naughton, Miss. Hannah","female",42.7540476985977,0,0,"365237",7.75,"","Q",0
 "412","1","Minahan, Mrs. William Edward (Lillian E Thorpe)","female",37,1,0,"19928",90,"C78","Q",1
 "413","3","Henriksson, Miss. Jenny Lovisa","female",28,0,0,"347086",7.775,"","S",0

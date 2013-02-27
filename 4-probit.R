@@ -10,7 +10,7 @@ load("Data/test_clean.RData")   # 418 obs
 ###
 
 # Create forest without name, ticket, cabin, or embarked
-probit <- glm(survived ~ sex + pclass + fare, data = train,
+probit <- glm(survived ~ sex + pclass + fare + age, data = train,
                 family = binomial(link = "probit"))
 summary(probit)
 
