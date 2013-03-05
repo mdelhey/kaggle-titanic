@@ -38,6 +38,10 @@ test$embarked <- factor(test$embarked)
 ###
 ### Fixing missing values
 ###
+# 177 missing ages in TRAIN
+# 86 missing ages in TEST
+# 1 missing fare in TEST
+# 2 missing embarked in TRAIN
 
 # Combine the data sets for age/fare modeling
 full <- join(test, train, type = "full")
@@ -48,23 +52,17 @@ full.fare <- full[!is.na(full$fare), ]
 
 # Create LM models for predicting missing values in AGE and FARE
 age.mod <- lm(age ~ pclass + sex +
-                sibsp + parch + fare, data = full)
+               # sibsp + parch + fare, data = full)
 fare.mod<- lm(fare ~ pclass + sex +
-                sibsp + parch + age, data = full)
-
-# Create RF models for predicting missing values in AGE and FARE
-#age.rf <- randomForest(age ~ pclass + sex + sibsp + parch + fare + embarked, data = full.age, 
-                       ntree = 1000, importance = TRUE)
+               # sibsp + parch + age, data = full)
 
 # Replace missing values in AGE and FARE with prediction
 train$age[is.na(train$age)] <- predict(age.mod, train)
-train$fare[is.na(train$fare)] <- predict(fare.mod, train)
 test$age[is.na(test$age)] <- predict(age.mod, test)
 test$fare[is.na(test$fare)] <- predict(fare.mod, test)
 
 # Replace missing values in embarked with most popular
 train$embarked[train$embarked == ""] <- "S"
-
 
 ###
 ### Create fare-distance metric

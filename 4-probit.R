@@ -9,7 +9,7 @@ load("Data/test_clean.RData")   # 418 obs
 ### Create probit model and make prediction
 ###
 
-# Create forest without name, ticket, cabin, or embarked
+# Create probit with SEX, PCLASS, FARE, and AGE
 probit <- glm(survived ~ sex + pclass + fare + age, data = train,
                 family = binomial(link = "probit"))
 summary(probit)
