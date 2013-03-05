@@ -1,7 +1,7 @@
 # Goal:     (1) Construct basic randomForest models from the data
 #           (2) Select the best model (Model selection)
 #           (3) Save a prediction with our best randomForest
-library(randomForest)
+library(gbm)
 library(plyr)
 
 # Load in the cleaned data sets
@@ -12,24 +12,19 @@ load("Data/test_clean.RData")   # 418 obs
 ### Create randomForest model
 ###
 
-# Create random forest based on PCLASS, SEX, FARE, and AGE
-forest <- randomForest(survived ~ sex + pclass + fare + age, 
-                       data = train, ntree = 15000, importance = TRUE)
-
-summary(forest)
-
-# Extract the importance of each variable
-importance(forest)
+# Create random forest based on PCLASS, SEX, FARE, AGE
+gbm <- gbm(survived ~ sex + pclass + fare + age, 
+           data = train, distribution = "adaboost", n.trees = 500)
 
 ###
 ### Saving our model and prediction as a new CSV
 ###
 
 # Make our prediction on the TRAIN data set [For calculating error]
-train$survived_pred <- predict(forest, train)
+train$survived_pred <- predict(gbm, train, n.trees = 500)
 
 # Make our prediction on the TEST data set
-test$survived <- predict(forest, test)
+test$survived <- predict(gbm, test, n.trees = 500)
 
 # save csv file for submission
-write.csv(test, "Submissions/randomForest-04.csv")
+write.csv(test, "Submissions/gbm-01.csv")

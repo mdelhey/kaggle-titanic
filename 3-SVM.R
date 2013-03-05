@@ -9,7 +9,7 @@ load("Data/test_clean.RData")   # 418 obs
 ### Create SVM model
 ###
 
-# Create the SVM model with SEX, PCLASS, FARE
+# Create the SVM model with SEX, PCLASS, FARE, and AGE
 svm.model <- ksvm(survived ~ sex + pclass + fare + age, data = train)
 
 ###
