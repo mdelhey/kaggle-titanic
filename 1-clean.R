@@ -51,19 +51,30 @@ full.age <- full[!is.na(full$age), ]
 full.fare <- full[!is.na(full$fare), ]
 
 # Multiple Imputation
-library(mi)
-inf <- mi.
+#library(mi)
+#inf <- mi.info(train)
+#imp <- mi(train, info = inf, check.coef.convergence = FALSE, n.imp = 2, n.iter = 6, seed = 111)
+#plot(imp)
 
 # Create LM models for predicting missing values in AGE and FARE
-#age.mod <- lm(age ~ pclass + sex +
-               # sibsp + parch + fare, data = full)
-#fare.mod<- lm(fare ~ pclass + sex +
-               # sibsp + parch + age, data = full)
+age.mod <- lm(age ~ pclass + sex +
+                sibsp + parch + fare, data = full)
+fare.mod<- lm(fare ~ pclass + sex +
+                sibsp + parch + age, data = full)
 
 # Replace missing values in AGE and FARE with prediction
-#train$age[is.na(train$age)] <- predict(age.mod, train)
-#test$age[is.na(test$age)] <- predict(age.mod, test)
-#test$fare[is.na(test$fare)] <- predict(fare.mod, test)
+train$age[is.na(train$age)] <- predict(age.mod, train)
+test$age[is.na(test$age)] <- predict(age.mod, test)
+test$fare[is.na(test$fare)] <- predict(fare.mod, test)
+
+# Random Forest to find missing values
+#fare.rf <- randomForest(fare ~ pclass + sex + sibsp + parch, data = full.fare, ntree = 5000)
+#test$fare[is.na(test$fare)] <- predict(fare.rf, test)
+
+#full.age$fare[is.na(full.age$fare)] <- predict(fare.rf, full.age)
+#age.rf <- randomForest(age ~ pclass + sex + sibsp + parch + fare, data = full.age, ntree = 5000)
+#train$age[is.na(train$age)] <- predict(age.rf, train)
+#test$age[is.na(test$age)] <- predict(age.rf, test)
 
 # Replace missing values in embarked with most popular
 train$embarked[train$embarked == ""] <- "S"
