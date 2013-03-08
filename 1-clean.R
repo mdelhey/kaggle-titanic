@@ -15,7 +15,6 @@ library(plyr)
 train <- read.csv("Data/train.csv", stringsAsFactors = FALSE)  # 891 obs
 test <- read.csv("Data/test.csv", stringsAsFactors = FALSE)    # 418 obs
 
-
 ###
 ### Data structures
 ###
@@ -33,7 +32,6 @@ test$survived <- factor(test$survived)
 test$sex <- factor(test$sex)
 test$pclass <- factor(test$pclass)
 test$embarked <- factor(test$embarked)
-
 
 ###
 ### Fixing missing values
@@ -63,9 +61,9 @@ fare.mod<- lm(fare ~ pclass + sex +
                 sibsp + parch + age, data = full)
 
 # Replace missing values in AGE and FARE with prediction
-train$age[is.na(train$age)] <- predict(age.mod, train)
-test$age[is.na(test$age)] <- predict(age.mod, test)
-test$fare[is.na(test$fare)] <- predict(fare.mod, test)
+train$age[is.na(train$age)] <- predict(age.mod, train)[is.na(train$age)]
+test$age[is.na(test$age)] <- predict(age.mod, test)[is.na(test$age)]
+test$fare[is.na(test$fare)] <- predict(fare.mod, test)[is.na(test$fare)]
 
 # Random Forest to find missing values
 #fare.rf <- randomForest(fare ~ pclass + sex + sibsp + parch, data = full.fare, ntree = 5000)
@@ -109,7 +107,6 @@ train <- train[, !names(train) %in% c("fare_avg")]
 # Create fare-distance metric for Test
 test <- transform(test, fare_distance = fare - fare_avg)
 test <- test[, !names(test) %in% c("fare_avg")]
-
 
 ###
 ### Saving new data sets

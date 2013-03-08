@@ -14,24 +14,15 @@ probit <- glm(survived ~ sex + pclass + fare + age, data = train,
                 family = binomial(link = "probit"))
 summary(probit)
 
-# Check to see how many predictions our forest gets
-# correct in the test data set. This gives us a rough 
-# estimate of how our model might perform
-train$survived_pred <- predict(probit, train)
-train$survived_pred[train$survived_pred >= 0.5] <- 1
-train$survived_pred[train$survived_pred < 0.5] <- 0
-which(train$survived_pred != train$survived)
-
-# Calculate our % accuracy on the train data set
-((length(which(train$survived_pred == train$survived))) /
-   length(train$survived)) * 100
-
 ###
 ### Saving our model and prediction as a new CSV
 ###
 
-# Make a prediction with our probit
-test$survived <- predict(probit, test)
+# Make our prediction on the TRAIN data set [For calculating error]
+train$survived_pred <- predict(test, train, type = "response")
+
+# Make a prediction with our probit on TEST
+test$survived <- predict(probit, test, type = "response")
 test$survived[test$survived >= 0.5] <- 1
 test$survived[test$survived < 0.5] <- 0
 

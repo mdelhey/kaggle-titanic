@@ -1,9 +1,13 @@
 # Goal: Test the accuracy of our model.
 
-# Load in our model (edit this!)
-source("2-randomForest.R")
+# Load in the cleaned data sets
+load("Data/train_clean.RData")  # 891 obs
+load("Data/test_clean.RData")   # 418 obs
 
-# Note: This will automatically load data sets
+# Load in our models (edit this!)
+#source("2-randomForest.R")
+#source("3-SVM.R")
+#source("4-probit.R")
 
 ###
 ### Training Error
