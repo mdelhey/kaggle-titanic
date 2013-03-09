@@ -66,6 +66,9 @@ cv_kfolds <- function(model, k = 5) {
     
     # Predict on the new_test data set with our model
     test_new$survived_pred <- predict(temp_model, test_new)
+    test_new$survived_pred[test_new$survived_pred >= 0.5] <- 1
+    test_new$survived_pred[test_new$survived_pred < 0.5] <- 0
+    
     # Find the error in our model for new_test
     errors[i] <- ((length(which(test_new$survived_pred == test_new$survived))) /
                     length(test_new$survived)) * 100
@@ -90,16 +93,21 @@ cv_kfolds <- function(model, k = 5) {
 ###
 
 # randomForest
-source("2-randomForest.R")
-train_error(survived_pred)
-cv_kfolds(model, k = 5)
+#source("2-randomForest.R")
+#train_error(survived_pred)
+#cv_kfolds(model, k = 5)
 
 # SVM
-source("3-SVM.R")
-train_error(survived_pred)
-cv_kfolds(model, k = 5)
+#source("3-SVM.R")
+#train_error(survived_pred)
+#cv_kfolds(model, k = 5)
 
 # Probit
-source("4-probit.R")
+#source("4-probit.R")
+#train_error(survived_pred)
+#cv_kfolds(model, k = 5)
+
+# Sofia
+source("4-sofia.R")
 train_error(survived_pred)
 cv_kfolds(model, k = 5)

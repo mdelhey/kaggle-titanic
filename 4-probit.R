@@ -10,12 +10,12 @@ load("Data/test_clean.RData")   # 418 obs
 ###
 
 # Create probit with SEX, PCLASS, FARE, and AGE
-probit <- glm(survived ~ sex.name + pclass + age + fare.distance + fare, data = train,
+probit <- glm(survived ~ sex.name + pclass + age + fare, data = train,
                 family = binomial(link = "probit"))
 summary(probit)
 
 # Save model as string
-model <- 'glm(survived ~ sex.name + pclass + age + fare.distance + fare, data = train, family = binomial(link = "probit"))'
+model <- 'glm(survived ~ sex.name + pclass + age + fare, data = train, family = binomial(link = "probit"))'
 
 ###
 ### Saving our model and prediction as a new CSV

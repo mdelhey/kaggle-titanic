@@ -6,7 +6,7 @@
 "0","3","Allen, Mr. William Henry","male",35,0,0,"373450",8.05,"","S","Mr",-5.25288870056497
 "0","3","Moran, Mr. James","male",27.6762480515916,0,0,"330877",8.4583,"","Q","Mr",-4.84458870056497
 "0","1","McCarthy, Mr. Timothy J","male",54,0,0,"17463",51.8625,"E46","S","Mr",-35.6464916408669
-"0","3","Palsson, Master. Gosta Leonard","male",2,3,1,"349909",21.075,"","S","Master",7.77211129943503
+"0","3","Palsson, Master. Gosta Leonard","male",2,3,1,"349909",21.075,"","S","Mr",7.77211129943503
 "1","3","Johnson, Mrs. Oscar W (Elisabeth Vilhelmina Berg)","female",27,0,2,"347742",11.1333,"","S","Mrs",-2.16958870056497
 "1","2","Nasser, Mrs. Nicholas (Adele Achem)","female",14,1,0,"237736",30.0708,"","C","Mrs",8.8916036101083
 "1","3","Sandstrom, Miss. Marguerite Rut","female",4,1,1,"PP 9549",16.7,"G6","S","Miss",3.39711129943503
@@ -15,7 +15,7 @@
 "0","3","Andersson, Mr. Anders Johan","male",39,1,5,"347082",31.275,"","S","Mr",17.972111299435
 "0","3","Vestrom, Miss. Hulda Amanda Adolfina","female",14,0,0,"350406",7.8542,"","S","Miss",-5.44868870056497
 "1","2","Hewlett, Mrs. (Mary D Kingcome) ","female",55,0,0,"248706",16,"","S","Mrs",-5.1791963898917
-"0","3","Rice, Master. Eugene","male",2,4,1,"382652",29.125,"","Q","Master",15.822111299435
+"0","3","Rice, Master. Eugene","male",2,4,1,"382652",29.125,"","Q","Mr",15.822111299435
 "1","2","Williams, Mr. Charles Eugene","male",32.2227451332101,0,0,"244373",13,"","S","Mr",-8.1791963898917
 "0","3","Vander Planke, Mrs. Julius (Emelia Maria Vandemoortele)","female",31,1,0,"345763",18,"","S","Mrs",4.69711129943503
 "1","3","Masselmani, Mrs. Fatima","female",25.0273364308575,0,0,"2649",7.225,"","C","Mrs",-6.07788870056497
@@ -29,7 +29,7 @@
 "0","1","Fortune, Mr. Charles Alexander","male",19,3,2,"19950",263,"C23 C25 C27","S","Mr",175.491008359133
 "1","3","O'Dwyer, Miss. Ellen ""Nellie""","female",25.021787405665,0,0,"330959",7.8792,"","Q","Miss",-5.42368870056497
 "0","3","Todoroff, Mr. Lalio","male",27.6810192632559,0,0,"349216",7.8958,"","S","Mr",-5.40708870056497
-"0","1","Uruchurtu, Don. Manuel E","male",40,0,0,"PC 17601",27.7208,"","C","Noble",-59.7881916408669
+"0","1","Uruchurtu, Don. Manuel E","male",40,0,0,"PC 17601",27.7208,"","C","Mr",-59.7881916408669
 "1","1","Spencer, Mrs. William Augustus (Marie Eugenie)","female",35.9592318227533,1,0,"PC 17569",146.5208,"B78","C","Mrs",59.0118083591331
 "1","3","Glynn, Miss. Mary Agatha","female",25.0228832999708,0,0,"335677",7.75,"","Q","Miss",-5.55288870056497
 "0","2","Wheadon, Mr. Edward H","male",66,0,0,"C.A. 24579",10.5,"","S","Mr",-10.6791963898917
@@ -46,10 +46,10 @@
 "1","3","Devaney, Miss. Margaret Delia","female",19,0,0,"330958",7.8792,"","Q","Miss",-5.42368870056497
 "0","3","Rogers, Mr. William John","male",27.6797113150983,0,0,"S.C./A.4. 23567",8.05,"","S","Mr",-5.25288870056497
 "0","3","Lennon, Mr. Denis","male",24.5033520470008,1,0,"370371",15.5,"","Q","Mr",2.19711129943503
-"1","3","O'Driscoll, Miss. Bridget","female",25.0228832999708,0,0,"14311",7.75,"","Q","Dr",-5.55288870056497
+"1","3","O'Driscoll, Miss. Bridget","female",25.0228832999708,0,0,"14311",7.75,"","Q","Mr",-5.55288870056497
 "0","3","Samaan, Mr. Youssef","male",21.3377719002953,2,0,"2662",21.6792,"","C","Mr",8.37631129943503
 "0","3","Arnold-Franchi, Mrs. Josef (Josefine Franchi)","female",18,1,0,"349237",17.8,"","S","Mrs",4.49711129943503
-"0","3","Panula, Master. Juha Niilo","male",7,4,1,"3101295",39.6875,"","S","Master",26.384611299435
+"0","3","Panula, Master. Juha Niilo","male",7,4,1,"3101295",39.6875,"","S","Mr",26.384611299435
 "0","3","Nosworthy, Mr. Richard Cater","male",21,0,0,"A/4. 39886",7.8,"","S","Mr",-5.50288870056497
 "1","1","Harper, Mrs. Henry Sleeper (Myna Haxtun)","female",49,1,0,"PC 17572",76.7292,"D33","C","Mrs",-10.7797916408669
 "1","2","Faunthorpe, Mrs. Lizzie (Elizabeth Anne Wilkinson)","female",29,1,0,"2926",26,"","S","Mrs",4.8208036101083
@@ -58,13 +58,13 @@
 "1","2","Rugg, Miss. Emily","female",21,0,0,"C.A. 31026",10.5,"","S","Miss",-10.6791963898917
 "0","3","Novel, Mr. Mansouer","male",28.5,0,0,"2697",7.2292,"","C","Mr",-6.07368870056497
 "1","2","West, Miss. Constance Mirium","female",5,1,2,"C.A. 34651",27.75,"","S","Miss",6.5708036101083
-"0","3","Goodwin, Master. William Frederick","male",11,5,2,"CA 2144",46.9,"","S","Master",33.597111299435
+"0","3","Goodwin, Master. William Frederick","male",11,5,2,"CA 2144",46.9,"","S","Mr",33.597111299435
 "0","3","Sirayanian, Mr. Orsen","male",22,0,0,"2669",7.2292,"","C","Mr",-6.07368870056497
 "1","1","Icard, Miss. Amelie","female",38,0,0,"113572",80,"B28","S","Miss",-7.50899164086687
 "0","1","Harris, Mr. Henry Birkhardt","male",45,1,0,"36973",83.475,"C83","S","Mr",-4.03399164086687
-"0","3","Skoog, Master. Harald","male",4,3,2,"347088",27.9,"","S","Master",14.597111299435
+"0","3","Skoog, Master. Harald","male",4,3,2,"347088",27.9,"","S","Mr",14.597111299435
 "0","1","Stewart, Mr. Albert A","male",42.7394516078743,0,0,"PC 17605",27.7208,"","C","Mr",-59.7881916408669
-"1","3","Moubarek, Master. Gerios","male",23.7600945100115,1,1,"2661",15.2458,"","C","Master",1.94291129943503
+"1","3","Moubarek, Master. Gerios","male",23.7600945100115,1,1,"2661",15.2458,"","C","Mr",1.94291129943503
 "1","2","Nye, Mrs. (Elizabeth Ramell)","female",29,0,0,"C.A. 29395",10.5,"F33","S","Mrs",-10.6791963898917
 "0","3","Crease, Mr. Ernest James","male",19,0,0,"S.P. 3464",8.1583,"","S","Mr",-5.14458870056497
 "1","3","Andersson, Miss. Erna Alexandra","female",17,4,2,"3101281",7.925,"","S","Miss",-5.37788870056497
@@ -77,7 +77,7 @@
 "0","3","Moen, Mr. Sigurd Hansen","male",25,0,0,"348123",7.65,"F G73","S","Mr",-5.65288870056497
 "0","3","Staneff, Mr. Ivan","male",27.6810192632559,0,0,"349208",7.8958,"","S","Mr",-5.40708870056497
 "0","3","Moutal, Mr. Rahamin Haim","male",27.6797113150983,0,0,"374746",8.05,"","S","Mr",-5.25288870056497
-"1","2","Caldwell, Master. Alden Gates","male",0.83,0,2,"248738",29,"","S","Master",7.8208036101083
+"1","2","Caldwell, Master. Alden Gates","male",0.83,0,2,"248738",29,"","S","Mr",7.8208036101083
 "1","3","Dowdell, Miss. Elizabeth","female",30,0,0,"364516",12.475,"","S","Miss",-0.827888700564973
 "0","3","Waelens, Mr. Achille","male",22,0,0,"345767",9,"","S","Mr",-4.30288870056497
 "1","3","Sheerlinck, Mr. Jan Baptist","male",29,0,0,"345779",9.5,"","S","Mr",-3.80288870056497
@@ -124,12 +124,12 @@
 "0","2","Nasser, Mr. Nicholas","male",32.5,1,0,"237736",30.0708,"","C","Mr",8.8916036101083
 "1","2","Webber, Miss. Susan","female",32.5,0,0,"27267",13,"E101","S","Miss",-8.1791963898917
 "0","1","White, Mr. Percival Wayland","male",54,0,1,"35281",77.2875,"D26","S","Mr",-10.2214916408669
-"1","3","Nicola-Yarred, Master. Elias","male",12,1,0,"2651",11.2417,"","C","Master",-2.06118870056497
+"1","3","Nicola-Yarred, Master. Elias","male",12,1,0,"2651",11.2417,"","C","Mr",-2.06118870056497
 "0","3","McMahon, Mr. Martin","male",27.6822559613193,0,0,"370372",7.75,"","Q","Mr",-5.55288870056497
 "1","3","Madsen, Mr. Fridtjof Arne","male",24,0,0,"C 17369",7.1417,"","S","Mr",-6.16118870056497
 "1","3","Peter, Miss. Anna","female",21.0403925278414,1,1,"2668",22.3583,"F E69","C","Miss",9.05541129943503
 "0","3","Ekstrom, Mr. Johan","male",45,0,0,"347061",6.975,"","S","Mr",-6.32788870056497
-"0","3","Drazenoic, Mr. Jozef","male",33,0,0,"349241",7.8958,"","C","Dr",-5.40708870056497
+"0","3","Drazenoic, Mr. Jozef","male",33,0,0,"349241",7.8958,"","C","Mr",-5.40708870056497
 "0","3","Coelho, Mr. Domingos Fernandeo","male",20,0,0,"SOTON/O.Q. 3101307",7.05,"","S","Mr",-6.25288870056497
 "0","3","Robins, Mrs. Alexander A (Grace Charity Laury)","female",47,1,0,"A/5. 3337",14.5,"","S","Mrs",1.19711129943503
 "1","2","Weisz, Mrs. Leopold (Mathilde Francoise Pede)","female",29,1,0,"228414",26,"","S","Mrs",4.8208036101083
@@ -148,8 +148,8 @@
 "1","3","Andersson, Mr. August Edvard (""Wennerstrom"")","male",27,0,0,"350043",7.7958,"","S","Mr",-5.50708870056497
 "0","3","Ford, Miss. Robina Maggie ""Ruby""","female",9,2,2,"W./C. 6608",34.375,"","S","Miss",21.072111299435
 "0","2","Navratil, Mr. Michel (""Louis M Hoffman"")","male",36.5,0,2,"230080",26,"F2","S","Mr",4.8208036101083
-"0","2","Byles, Rev. Thomas Roussel Davids","male",42,0,0,"244310",13,"","S","Dr",-8.1791963898917
-"0","2","Bateman, Rev. Robert James","male",51,0,0,"S.O.P. 1166",12.525,"","S","Dr",-8.6541963898917
+"0","2","Byles, Rev. Thomas Roussel Davids","male",42,0,0,"244310",13,"","S","Mr",-8.1791963898917
+"0","2","Bateman, Rev. Robert James","male",51,0,0,"S.O.P. 1166",12.525,"","S","Mr",-8.6541963898917
 "1","1","Pears, Mrs. Thomas (Edith Wearne)","female",22,1,0,"113776",66.6,"C2","S","Mrs",-20.9089916408669
 "0","3","Meo, Mr. Alfonzo","male",55.5,0,0,"A.5. 11206",8.05,"","S","Mr",-5.25288870056497
 "0","3","van Billiard, Mr. Austin Blyler","male",40.5,0,2,"A/5. 851",14.5,"","S","Mr",1.19711129943503
@@ -158,31 +158,31 @@
 "1","3","Gilnagh, Miss. Katherine ""Katie""","female",16,0,0,"35851",7.7333,"","Q","Miss",-5.56958870056497
 "0","3","Corn, Mr. Harry","male",30,0,0,"SOTON/OQ 392090",8.05,"","S","Mr",-5.25288870056497
 "0","3","Smiljanic, Mr. Mile","male",27.6745159957305,0,0,"315037",8.6625,"","S","Mr",-4.64038870056497
-"0","3","Sage, Master. Thomas Henry","male",0.76189367647805,8,2,"CA. 2343",69.55,"","S","Master",56.247111299435
+"0","3","Sage, Master. Thomas Henry","male",0.76189367647805,8,2,"CA. 2343",69.55,"","S","Mr",56.247111299435
 "0","3","Cribb, Mr. John Hatfield","male",44,0,1,"371362",16.1,"","S","Mr",2.79711129943503
 "1","2","Watt, Mrs. James (Elizabeth ""Bessie"" Inglis Milne)","female",40,0,0,"C.A. 33595",15.75,"","S","Mrs",-5.4291963898917
 "0","3","Bengtsson, Mr. John Viktor","male",26,0,0,"347068",7.775,"","S","Mr",-5.52788870056497
 "0","3","Calic, Mr. Jovo","male",17,0,0,"315093",8.6625,"","S","Mr",-4.64038870056497
-"0","3","Panula, Master. Eino Viljami","male",1,4,1,"3101295",39.6875,"","S","Master",26.384611299435
-"1","3","Goldsmith, Master. Frank John William ""Frankie""","male",9,0,2,"363291",20.525,"","S","Master",7.22211129943503
+"0","3","Panula, Master. Eino Viljami","male",1,4,1,"3101295",39.6875,"","S","Mr",26.384611299435
+"1","3","Goldsmith, Master. Frank John William ""Frankie""","male",9,0,2,"363291",20.525,"","S","Mr",7.22211129943503
 "1","1","Chibnall, Mrs. (Edith Martha Bowerman)","female",39.1032788686704,0,1,"113505",55,"E33","S","Mrs",-32.5089916408669
 "0","3","Skoog, Mrs. William (Anna Bernhardina Karlsson)","female",45,1,4,"347088",27.9,"","S","Mrs",14.597111299435
 "0","1","Baumann, Mr. John D","male",42.7546838601529,0,0,"PC 17318",25.925,"","S","Mr",-61.5839916408669
 "0","3","Ling, Mr. Lee","male",28,0,0,"1601",56.4958,"","S","Mr",43.192911299435
 "0","1","Van der hoef, Mr. Wyckoff","male",61,0,0,"111240",33.5,"B19","S","Mr",-54.0089916408669
-"0","3","Rice, Master. Arthur","male",4,4,1,"382652",29.125,"","Q","Master",15.822111299435
+"0","3","Rice, Master. Arthur","male",4,4,1,"382652",29.125,"","Q","Mr",15.822111299435
 "1","3","Johnson, Miss. Eleanor Ileen","female",1,1,1,"347742",11.1333,"","S","Miss",-2.16958870056497
 "0","3","Sivola, Mr. Antti Wilhelm","male",21,0,0,"STON/O 2. 3101280",7.925,"","S","Mr",-5.37788870056497
 "0","1","Smith, Mr. James Clinch","male",56,0,0,"17764",30.6958,"A7","C","Mr",-56.8131916408669
 "0","3","Klasen, Mr. Klas Albin","male",18,1,1,"350404",7.8542,"","S","Mr",-5.44868870056497
-"0","3","Lefebre, Master. Henry Forbes","male",17.4470648209247,3,1,"4133",25.4667,"","S","Master",12.163811299435
+"0","3","Lefebre, Master. Henry Forbes","male",17.4470648209247,3,1,"4133",25.4667,"","S","Mr",12.163811299435
 "0","1","Isham, Miss. Ann Elizabeth","female",50,0,0,"PC 17595",28.7125,"C49","C","Miss",-58.7964916408669
 "0","2","Hale, Mr. Reginald","male",30,0,0,"250653",13,"","S","Mr",-8.1791963898917
 "0","3","Leonard, Mr. Lionel","male",36,0,0,"LINE",0,"","S","Mr",-13.302888700565
 "0","3","Sage, Miss. Constance Gladys","female",-1.89747898487036,8,2,"CA. 2343",69.55,"","S","Miss",56.247111299435
 "0","2","Pernot, Mr. Rene","male",32.2053567173669,0,0,"SC/PARIS 2131",15.05,"","C","Mr",-6.1291963898917
-"0","3","Asplund, Master. Clarence Gustaf Hugo","male",9,4,2,"347077",31.3875,"","S","Master",18.084611299435
-"1","2","Becker, Master. Richard F","male",1,2,1,"230136",39,"F4","S","Master",17.8208036101083
+"0","3","Asplund, Master. Clarence Gustaf Hugo","male",9,4,2,"347077",31.3875,"","S","Mr",18.084611299435
+"1","2","Becker, Master. Richard F","male",1,2,1,"230136",39,"F4","S","Mr",17.8208036101083
 "1","3","Kink-Heilmann, Miss. Luise Gretchen","female",4,0,2,"315153",22.025,"","S","Miss",8.72211129943503
 "0","1","Rood, Mr. Hugh Roscoe","male",42.5504760009219,0,0,"113767",50,"A32","S","Mr",-37.5089916408669
 "1","3","O'Brien, Mrs. Thomas (Johanna ""Hannah"" Godfrey)","female",21.8439793856524,1,0,"370365",15.5,"","Q","Mrs",2.19711129943503
@@ -192,7 +192,7 @@
 "1","2","Pinsky, Mrs. (Rosa)","female",32,0,0,"234604",13,"","S","Mrs",-8.1791963898917
 "0","2","Carbines, Mr. William","male",19,0,0,"28424",13,"","S","Mr",-8.1791963898917
 "1","3","Andersen-Jensen, Miss. Carla Christine Nielsine","female",19,1,0,"350046",7.8542,"","S","Miss",-5.44868870056497
-"1","2","Navratil, Master. Michel M","male",3,1,1,"230080",26,"F2","S","Master",4.8208036101083
+"1","2","Navratil, Master. Michel M","male",3,1,1,"230080",26,"F2","S","Mr",4.8208036101083
 "1","1","Brown, Mrs. James Joseph (Margaret Tobin)","female",44,0,0,"PC 17610",27.7208,"B4","C","Mrs",-59.7881916408669
 "1","1","Lurette, Miss. Elise","female",58,0,0,"PC 17569",146.5208,"B80","C","Miss",59.0118083591331
 "0","3","Mernagh, Mr. Robert","male",27.6822559613193,0,0,"368703",7.75,"","Q","Mr",-5.55288870056497
@@ -236,19 +236,19 @@
 "0","2","Leyson, Mr. Robert William Norman","male",24,0,0,"C.A. 29566",10.5,"","S","Mr",-10.6791963898917
 "0","3","Harknett, Miss. Alice Phoebe","female",25.0245797307848,0,0,"W./C. 6609",7.55,"","S","Miss",-5.75288870056497
 "0","2","Hold, Mr. Stephen","male",44,1,0,"26707",26,"","S","Mr",4.8208036101083
-"1","2","Collyer, Miss. Marjorie ""Lottie""","female",8,0,2,"C.A. 31921",26.25,"","S","Army",5.0708036101083
+"1","2","Collyer, Miss. Marjorie ""Lottie""","female",8,0,2,"C.A. 31921",26.25,"","S","Mr",5.0708036101083
 "0","2","Pengelly, Mr. Frederick William","male",19,0,0,"28665",10.5,"","S","Mr",-10.6791963898917
 "0","2","Hunt, Mr. George Henry","male",33,0,0,"SCO/W 1585",12.275,"","S","Mr",-8.9041963898917
 "0","3","Zabour, Miss. Thamine","female",21.8528500223786,1,0,"2665",14.4542,"","C","Miss",1.15131129943503
 "1","3","Murphy, Miss. Katherine ""Kate""","female",21.8439793856524,1,0,"367230",15.5,"","Q","Miss",2.19711129943503
-"0","2","Coleridge, Mr. Reginald Charles","male",29,0,0,"W./C. 14263",10.5,"","S","Army",-10.6791963898917
+"0","2","Coleridge, Mr. Reginald Charles","male",29,0,0,"W./C. 14263",10.5,"","S","Mr",-10.6791963898917
 "0","3","Maenpaa, Mr. Matti Alexanteri","male",22,0,0,"STON/O 2. 3101275",7.125,"","S","Mr",-6.17788870056497
 "0","3","Attalah, Mr. Sleiman","male",30,0,0,"2694",7.225,"","C","Mr",-6.07788870056497
-"0","1","Minahan, Dr. William Edward","male",44,2,0,"19928",90,"C78","Q","Dr",2.49100835913313
+"0","1","Minahan, Dr. William Edward","male",44,2,0,"19928",90,"C78","Q","Mr",2.49100835913313
 "0","3","Lindahl, Miss. Agda Thorilda Viktoria","female",25,0,0,"347071",7.775,"","S","Miss",-5.52788870056497
 "1","2","Hamalainen, Mrs. William (Anna)","female",24,0,2,"250649",14.5,"","S","Mrs",-6.6791963898917
 "1","1","Beckwith, Mr. Richard Leonard","male",37,1,1,"11751",52.5542,"D35","S","Mr",-34.9547916408669
-"0","2","Carter, Rev. Ernest Courtenay","male",54,1,0,"244252",26,"","S","Dr",4.8208036101083
+"0","2","Carter, Rev. Ernest Courtenay","male",54,1,0,"244252",26,"","S","Mr",4.8208036101083
 "0","3","Reed, Mr. James George","male",27.6864970383542,0,0,"362316",7.25,"","S","Mr",-6.05288870056497
 "0","3","Strom, Mrs. Wilhelm (Elna Matilda Persson)","female",29,1,1,"347054",10.4625,"G6","S","Mrs",-2.84038870056497
 "0","1","Stead, Mr. William Thomas","male",62,0,0,"113514",26.55,"C87","S","Mr",-60.9589916408669
@@ -260,7 +260,7 @@
 "1","1","Ward, Miss. Anna","female",35,0,0,"PC 17755",512.3292,"","C","Miss",424.820208359133
 "1","2","Parrish, Mrs. (Lutie Davis)","female",50,0,1,"230433",26,"","S","Mrs",4.8208036101083
 "0","3","Smith, Mr. Thomas","male",27.6822559613193,0,0,"384461",7.75,"","Q","Mr",-5.55288870056497
-"1","3","Asplund, Master. Edvin Rojj Felix","male",3,4,2,"347077",31.3875,"","S","Master",18.084611299435
+"1","3","Asplund, Master. Edvin Rojj Felix","male",3,4,2,"347077",31.3875,"","S","Mr",18.084611299435
 "0","1","Taussig, Mr. Emil","male",52,1,1,"110413",79.65,"E67","S","Mr",-7.85899164086686
 "0","1","Harrison, Mr. William","male",40,0,0,"112059",0,"B94","S","Mr",-87.5089916408669
 "0","3","Henry, Miss. Delia","female",25.0228832999708,0,0,"382649",7.75,"","Q","Miss",-5.55288870056497
@@ -277,7 +277,7 @@
 "1","1","Andrews, Miss. Kornelia Theodosia","female",63,1,0,"13502",77.9583,"D7","S","Miss",-9.55069164086687
 "0","3","Lindblom, Miss. Augusta Charlotta","female",45,0,0,"347073",7.75,"","S","Miss",-5.55288870056497
 "0","2","Parkes, Mr. Francis ""Frank""","male",32.3330131361178,0,0,"239853",0,"","S","Mr",-21.1791963898917
-"0","3","Rice, Master. Eric","male",7,4,1,"382652",29.125,"","Q","Master",15.822111299435
+"0","3","Rice, Master. Eric","male",7,4,1,"382652",29.125,"","Q","Mr",15.822111299435
 "1","3","Abbott, Mrs. Stanton (Rosa Hunt)","female",35,1,1,"C.A. 2673",20.25,"","S","Mrs",6.94711129943503
 "0","3","Duane, Mr. Frank","male",65,0,0,"336439",7.75,"","Q","Mr",-5.55288870056497
 "0","3","Olsson, Mr. Nils Johan Goransson","male",28,0,0,"347464",7.8542,"","S","Mr",-5.44868870056497
@@ -304,7 +304,7 @@
 "0","3","Johnson, Mr. William Cahoone Jr","male",19,0,0,"LINE",0,"","S","Mr",-13.302888700565
 "1","2","Keane, Miss. Nora A","female",29.5688858720071,0,0,"226593",12.35,"E101","Q","Miss",-8.8291963898917
 "0","3","Williams, Mr. Howard Hugh ""Harry""","male",27.6797113150983,0,0,"A/5 2466",8.05,"","S","Mr",-5.25288870056497
-"1","1","Allison, Master. Hudson Trevor","male",0.92,1,2,"113781",151.55,"C22 C26","S","Master",64.0410083591331
+"1","1","Allison, Master. Hudson Trevor","male",0.92,1,2,"113781",151.55,"C22 C26","S","Mr",64.0410083591331
 "1","1","Fleming, Miss. Margaret","female",39.374681808694,0,0,"17421",110.8833,"","C","Miss",23.3743083591331
 "1","1","Penasco y Castellana, Mrs. Victor de Satode (Maria Josefa Perez de Soto y Vallejo)","female",17,1,0,"PC 17758",108.9,"C65","C","Mrs",21.3910083591331
 "0","2","Abelson, Mr. Samuel","male",30,1,0,"P/PP 3381",24,"","C","Mr",2.8208036101083
@@ -316,7 +316,7 @@
 "0","2","Hart, Mr. Benjamin","male",43,1,1,"F.C.C. 13529",26.25,"","S","Mr",5.0708036101083
 "1","3","Nilsson, Miss. Helmina Josefina","female",26,0,0,"347470",7.8542,"","S","Miss",-5.44868870056497
 "1","2","Kantor, Mrs. Sinai (Miriam Sternin)","female",24,1,0,"244367",26,"","S","Mrs",4.8208036101083
-"0","2","Moraweck, Dr. Ernest","male",54,0,0,"29011",14,"","S","Dr",-7.1791963898917
+"0","2","Moraweck, Dr. Ernest","male",54,0,0,"29011",14,"","S","Mr",-7.1791963898917
 "1","1","Wick, Miss. Mary Natalie","female",31,0,2,"36928",164.8667,"C7","S","Miss",77.3577083591331
 "1","1","Spedden, Mrs. Frederic Oakley (Margaretta Corning Stone)","female",40,1,1,"16966",134.5,"E34","C","Mrs",46.9910083591331
 "0","3","Dennis, Mr. Samuel","male",22,0,0,"A/5 21172",7.25,"","S","Mr",-6.05288870056497
@@ -339,15 +339,15 @@
 "1","1","Burns, Miss. Elizabeth Margaret","female",41,0,0,"16966",134.5,"E40","C","Miss",46.9910083591331
 "1","3","Dahl, Mr. Karl Edwart","male",45,0,0,"7598",8.05,"","S","Mr",-5.25288870056497
 "0","1","Blackwell, Mr. Stephen Weart","male",45,0,0,"113784",35.5,"T","S","Mr",-52.0089916408669
-"1","2","Navratil, Master. Edmond Roger","male",2,1,1,"230080",26,"F2","S","Master",4.8208036101083
+"1","2","Navratil, Master. Edmond Roger","male",2,1,1,"230080",26,"F2","S","Mr",4.8208036101083
 "1","1","Fortune, Miss. Alice Elizabeth","female",24,3,2,"19950",263,"C23 C25 C27","S","Miss",175.491008359133
-"0","2","Collander, Mr. Erik Gustaf","male",28,0,0,"248740",13,"","S","Army",-8.1791963898917
+"0","2","Collander, Mr. Erik Gustaf","male",28,0,0,"248740",13,"","S","Mr",-8.1791963898917
 "0","2","Sedgwick, Mr. Charles Frederick Waddington","male",25,0,0,"244361",13,"","S","Mr",-8.1791963898917
 "0","2","Fox, Mr. Stanley Hubert","male",36,0,0,"229236",13,"","S","Mr",-8.1791963898917
 "1","2","Brown, Miss. Amelia ""Mildred""","female",24,0,0,"248733",13,"F33","S","Miss",-8.1791963898917
 "1","2","Smith, Miss. Marion Elsie","female",40,0,0,"31418",13,"","S","Miss",-8.1791963898917
 "1","3","Davison, Mrs. Thomas Henry (Mary E Finck)","female",21.8388900932105,1,0,"386525",16.1,"","S","Mrs",2.79711129943503
-"1","3","Coutts, Master. William Loch ""William""","male",3,1,1,"C.A. 37671",15.9,"","S","Master",2.59711129943503
+"1","3","Coutts, Master. William Loch ""William""","male",3,1,1,"C.A. 37671",15.9,"","S","Mr",2.59711129943503
 "0","3","Dimic, Mr. Jovan","male",42,0,0,"315088",8.6625,"","S","Mr",-4.64038870056497
 "0","3","Odahl, Mr. Nils Martin","male",23,0,0,"7267",9.225,"","S","Mr",-4.07788870056497
 "0","1","Williams-Lambert, Mr. Fletcher Fellows","male",42.6777083119693,0,0,"113510",35,"C128","S","Mr",-52.5089916408669
@@ -385,7 +385,7 @@
 "1","1","Holverson, Mrs. Alexander Oskar (Mary Aline Towner)","female",35,1,0,"113789",52,"","S","Mrs",-35.5089916408669
 "0","3","Plotcharsky, Mr. Vasil","male",27.6810192632559,0,0,"349227",7.8958,"","S","Mr",-5.40708870056497
 "0","2","Davies, Mr. Charles Henry","male",18,0,0,"S.O.C. 14879",73.5,"","S","Mr",52.3208036101083
-"0","3","Goodwin, Master. Sidney Leonard","male",1,5,2,"CA 2144",46.9,"","S","Master",33.597111299435
+"0","3","Goodwin, Master. Sidney Leonard","male",1,5,2,"CA 2144",46.9,"","S","Mr",33.597111299435
 "1","2","Buss, Miss. Kate","female",36,0,0,"27849",13,"","S","Miss",-8.1791963898917
 "0","3","Sadlier, Mr. Matthew","male",27.6824323901239,0,0,"367655",7.7292,"","Q","Mr",-5.57368870056497
 "1","2","Lehmann, Miss. Bertha","female",17,0,0,"SC 1748",12,"","C","Miss",-9.1791963898917
@@ -397,7 +397,7 @@
 "0","3","Johansson, Mr. Erik","male",22,0,0,"350052",7.7958,"","S","Mr",-5.50708870056497
 "0","3","Olsson, Miss. Elina","female",31,0,0,"350407",7.8542,"","S","Miss",-5.44868870056497
 "0","2","McKane, Mr. Peter David","male",46,0,0,"28403",26,"","S","Mr",4.8208036101083
-"0","2","Pain, Dr. Alfred","male",23,0,0,"244278",10.5,"","S","Dr",-10.6791963898917
+"0","2","Pain, Dr. Alfred","male",23,0,0,"244278",10.5,"","S","Mr",-10.6791963898917
 "1","2","Trout, Mrs. William H (Jessie L)","female",28,0,0,"240929",12.65,"","S","Mrs",-8.5291963898917
 "1","3","Niskanen, Mr. Juha","male",39,0,0,"STON/O 2. 3101289",7.925,"","S","Mr",-5.37788870056497
 "0","3","Adams, Mr. John","male",26,0,0,"341826",8.05,"","S","Mr",-5.25288870056497
@@ -406,7 +406,7 @@
 "0","3","Oreskovic, Miss. Marija","female",20,0,0,"315096",8.6625,"","S","Miss",-4.64038870056497
 "0","2","Gale, Mr. Shadrach","male",34,1,0,"28664",21,"","S","Mr",-0.179196389891697
 "0","3","Widegren, Mr. Carl/Charles Peter","male",51,0,0,"347064",7.75,"","S","Mr",-5.55288870056497
-"1","2","Richards, Master. William Rowe","male",3,1,1,"29106",18.75,"","S","Master",-2.4291963898917
+"1","2","Richards, Master. William Rowe","male",3,1,1,"29106",18.75,"","S","Mr",-2.4291963898917
 "0","3","Birkeland, Mr. Hans Martin Monsen","male",21,0,0,"312992",7.775,"","S","Mr",-5.52788870056497
 "0","3","Lefebre, Miss. Ida","female",14.7876921595763,3,1,"4133",25.4667,"","S","Miss",12.163811299435
 "0","3","Sdycoff, Mr. Todor","male",27.6810192632559,0,0,"349222",7.8958,"","S","Mr",-5.40708870056497
@@ -415,7 +415,7 @@
 "0","2","Cunningham, Mr. Alfred Fleming","male",32.3330131361178,0,0,"239853",0,"","S","Mr",-21.1791963898917
 "1","3","Sundman, Mr. Johan Julian","male",44,0,0,"STON/O 2. 3101269",7.925,"","S","Mr",-5.37788870056497
 "0","3","Meek, Mrs. Thomas (Annie Louise Rowley)","female",25.0203386537499,0,0,"343095",8.05,"","S","Mrs",-5.25288870056497
-"1","2","Drew, Mrs. James Vivian (Lulu Thorne Christian)","female",34,1,1,"28220",32.5,"","S","Dr",11.3208036101083
+"1","2","Drew, Mrs. James Vivian (Lulu Thorne Christian)","female",34,1,1,"28220",32.5,"","S","Mr",11.3208036101083
 "1","2","Silven, Miss. Lyyli Karoliina","female",18,0,2,"250652",13,"","S","Miss",-8.1791963898917
 "0","2","Matthews, Mr. William John","male",30,0,0,"28228",13,"","S","Mr",-8.1791963898917
 "0","3","Van Impe, Miss. Catharina","female",10,0,2,"345773",24.15,"","S","Miss",10.847111299435
@@ -444,11 +444,11 @@
 "0","3","Petterson, Mr. Johan Emil","male",25,1,0,"347076",7.775,"","S","Mr",-5.52788870056497
 "1","2","Reynaldo, Ms. Encarnacion","female",28,0,0,"230434",13,"","S","Miss",-8.1791963898917
 "1","3","Johannesen-Bratthammer, Mr. Bernt","male",27.6791811804689,0,0,"65306",8.1125,"","S","Mr",-5.19038870056497
-"1","1","Dodge, Master. Washington","male",4,0,2,"33638",81.8583,"A34","S","Master",-5.65069164086687
+"1","1","Dodge, Master. Washington","male",4,0,2,"33638",81.8583,"A34","S","Mr",-5.65069164086687
 "1","2","Mellinger, Miss. Madeleine Violet","female",13,0,1,"250644",19.5,"","S","Miss",-1.6791963898917
 "1","1","Seward, Mr. Frederic Kimber","male",34,0,0,"113794",26.55,"","S","Mr",-60.9589916408669
 "1","3","Baclini, Miss. Marie Catherine","female",5,2,1,"2666",19.2583,"","C","Miss",5.95541129943503
-"1","1","Peuchen, Major. Arthur Godfrey","male",52,0,0,"113786",30.5,"C104","S","Army",-57.0089916408669
+"1","1","Peuchen, Major. Arthur Godfrey","male",52,0,0,"113786",30.5,"C104","S","Mr",-57.0089916408669
 "0","2","West, Mr. Edwy Arthur","male",36,1,2,"C.A. 34651",27.75,"","S","Mr",6.5708036101083
 "0","3","Hagland, Mr. Ingvald Olai Olsen","male",24.4654648094171,1,0,"65303",19.9667,"","S","Mr",6.66381129943503
 "0","1","Foreman, Mr. Benjamin Laventall","male",30,0,0,"113051",27.75,"C111","C","Mr",-59.7589916408669
@@ -479,7 +479,7 @@
 "0","3","Braund, Mr. Lewis Richard","male",29,1,0,"3460",7.0458,"","S","Mr",-6.25708870056497
 "0","3","Karlsson, Mr. Nils August","male",22,0,0,"350060",7.5208,"","S","Mr",-5.78208870056497
 "1","3","Hirvonen, Miss. Hildur E","female",2,0,1,"3101298",12.2875,"","S","Miss",-1.01538870056497
-"0","3","Goodwin, Master. Harold Victor","male",9,5,2,"CA 2144",46.9,"","S","Master",33.597111299435
+"0","3","Goodwin, Master. Harold Victor","male",9,5,2,"CA 2144",46.9,"","S","Mr",33.597111299435
 "0","2","Frost, Mr. Anthony Wood ""Archie""","male",32.3330131361178,0,0,"239854",0,"","S","Mr",-21.1791963898917
 "0","3","Rouse, Mr. Richard Henry","male",50,0,0,"A/5 3594",8.05,"","S","Mr",-5.25288870056497
 "1","3","Turkula, Mrs. (Hedwig)","female",63,0,0,"4134",9.5875,"","S","Mrs",-3.71538870056497
@@ -488,7 +488,7 @@
 "1","1","Hoyt, Mrs. Frederick Maxfield (Jane Anne Forby)","female",35,1,0,"19943",90,"C93","S","Mrs",2.49100835913313
 "0","1","Kent, Mr. Edward Austin","male",58,0,0,"11771",29.7,"B37","C","Mr",-57.8089916408669
 "0","3","Somerton, Mr. Francis William","male",30,0,0,"A.5. 18509",8.05,"","S","Mr",-5.25288870056497
-"1","3","Coutts, Master. Eden Leslie ""Neville""","male",9,1,1,"C.A. 37671",15.9,"","S","Master",2.59711129943503
+"1","3","Coutts, Master. Eden Leslie ""Neville""","male",9,1,1,"C.A. 37671",15.9,"","S","Mr",2.59711129943503
 "0","3","Hagland, Mr. Konrad Mathias Reiersen","male",24.4654648094171,1,0,"65304",19.9667,"","S","Mr",6.66381129943503
 "0","3","Windelov, Mr. Einar","male",21,0,0,"SOTON/OQ 3101317",7.25,"","S","Mr",-6.05288870056497
 "0","1","Molson, Mr. Harry Markland","male",55,0,0,"113787",30.5,"C30","S","Mr",-57.0089916408669
@@ -513,7 +513,7 @@
 "0","3","Webber, Mr. James","male",27.6797113150983,0,0,"SOTON/OQ 3101316",8.05,"","S","Mr",-5.25288870056497
 "1","1","McGough, Mr. James Robert","male",36,0,0,"PC 17473",26.2875,"E25","S","Mr",-61.2214916408669
 "1","1","Rothschild, Mrs. Martin (Elizabeth L. Barrett)","female",54,1,0,"PC 17603",59.4,"","C","Mrs",-28.1089916408669
-"0","3","Coleff, Mr. Satio","male",24,0,0,"349209",7.4958,"","S","Army",-5.80708870056497
+"0","3","Coleff, Mr. Satio","male",24,0,0,"349209",7.4958,"","S","Mr",-5.80708870056497
 "0","1","Walker, Mr. William Anderson","male",47,0,0,"36967",34.0208,"D46","S","Mr",-53.4881916408669
 "1","2","Lemore, Mrs. (Amelia Milley)","female",34,0,0,"C.A. 34260",10.5,"F33","S","Mrs",-10.6791963898917
 "0","3","Ryan, Mr. Patrick","male",27.5431486345741,0,0,"371110",24.15,"","Q","Mr",10.847111299435
@@ -535,7 +535,7 @@
 "1","3","Peter, Mrs. Catherine (Catherine Rizk)","female",23.4081460475648,0,2,"2668",22.3583,"","C","Mrs",9.05541129943503
 "0","3","Cacic, Miss. Marija","female",30,0,0,"315084",8.6625,"","S","Miss",-4.64038870056497
 "1","2","Hart, Miss. Eva Miriam","female",7,0,2,"F.C.C. 13529",26.25,"","S","Miss",5.0708036101083
-"0","1","Butt, Major. Archibald Willingham","male",45,0,0,"113050",26.55,"B38","S","Army",-60.9589916408669
+"0","1","Butt, Major. Archibald Willingham","male",45,0,0,"113050",26.55,"B38","S","Mr",-60.9589916408669
 "1","1","LeRoy, Miss. Bertha","female",30,0,0,"PC 17761",106.425,"","C","Miss",18.9160083591331
 "0","3","Risien, Mr. Samuel Beard","male",27.6250014213479,0,0,"364498",14.5,"","S","Mr",1.19711129943503
 "1","1","Frolicher, Miss. Hedwig Margaritha","female",22,0,2,"13568",49.5,"B39","C","Miss",-38.0089916408669
@@ -543,12 +543,12 @@
 "0","3","Andersson, Miss. Ingeborg Constanzia","female",9,4,2,"347082",31.275,"","S","Miss",17.972111299435
 "0","3","Andersson, Miss. Sigrid Elisabeth","female",11,4,2,"347082",31.275,"","S","Miss",17.972111299435
 "1","2","Beane, Mr. Edward","male",32,1,0,"2908",26,"","S","Mr",4.8208036101083
-"0","1","Douglas, Mr. Walter Donald","male",50,1,0,"PC 17761",106.425,"C86","C","Noble",18.9160083591331
+"0","1","Douglas, Mr. Walter Donald","male",50,1,0,"PC 17761",106.425,"C86","C","Mr",18.9160083591331
 "0","1","Nicholson, Mr. Arthur Ernest","male",64,0,0,"693",26,"","S","Mr",-61.5089916408669
 "1","2","Beane, Mrs. Edward (Ethel Clarke)","female",19,1,0,"2908",26,"","S","Mrs",4.8208036101083
 "1","2","Padro y Manent, Mr. Julian","male",32.2154292753249,0,0,"SC/PARIS 2146",13.8625,"","C","Mr",-7.3166963898917
 "0","3","Goldsmith, Mr. Frank John","male",33,1,1,"363291",20.525,"","S","Mr",7.22211129943503
-"1","2","Davies, Master. John Morgan Jr","male",8,1,1,"C.A. 33112",36.75,"","S","Master",15.5708036101083
+"1","2","Davies, Master. John Morgan Jr","male",8,1,1,"C.A. 33112",36.75,"","S","Mr",15.5708036101083
 "1","1","Thayer, Mr. John Borland Jr","male",17,0,2,"17421",110.8833,"C70","C","Mr",23.3743083591331
 "0","2","Sharp, Mr. Percival James R","male",27,0,0,"244358",26,"","S","Mr",4.8208036101083
 "0","3","O'Brien, Mr. Timothy","male",27.6815841747169,0,0,"330979",7.8292,"","Q","Mr",-5.47368870056497
@@ -625,18 +625,18 @@
 "0","3","Hansen, Mr. Henry Damsgaard","male",21,0,0,"350029",7.8542,"","S","Mr",-5.44868870056497
 "0","3","Bowen, Mr. David John ""Dai""","male",21,0,0,"54636",16.1,"","S","Mr",2.79711129943503
 "0","1","Sutton, Mr. Frederick","male",61,0,0,"36963",32.3208,"D50","S","Mr",-55.1881916408669
-"0","2","Kirkland, Rev. Charles Leonard","male",57,0,0,"219533",12.35,"","Q","Dr",-8.8291963898917
+"0","2","Kirkland, Rev. Charles Leonard","male",57,0,0,"219533",12.35,"","Q","Mr",-8.8291963898917
 "1","1","Longley, Miss. Gretchen Fiske","female",21,0,0,"13502",77.9583,"D9","S","Miss",-9.55069164086687
 "0","3","Bostandyeff, Mr. Guentcho","male",26,0,0,"349224",7.8958,"","S","Mr",-5.40708870056497
 "0","3","O'Connell, Mr. Patrick D","male",27.6823976132922,0,0,"334912",7.7333,"","Q","Mr",-5.56958870056497
 "1","1","Barkworth, Mr. Algernon Henry Wilson","male",80,0,0,"27042",30,"A23","S","Mr",-57.5089916408669
 "0","3","Lundahl, Mr. Johan Svensson","male",51,0,0,"347743",7.0542,"","S","Mr",-6.24868870056497
-"1","1","Stahelin-Maeglin, Dr. Max","male",32,0,0,"13214",30.5,"B50","C","Dr",-57.0089916408669
+"1","1","Stahelin-Maeglin, Dr. Max","male",32,0,0,"13214",30.5,"B50","C","Mr",-57.0089916408669
 "0","1","Parr, Mr. William Henry Marsh","male",42.9745837044132,0,0,"112052",0,"","S","Mr",-87.5089916408669
 "0","3","Skoog, Miss. Mabel","female",9,3,2,"347088",27.9,"","S","Miss",14.597111299435
 "1","2","Davis, Miss. Mary","female",28,0,0,"237668",13,"","S","Miss",-8.1791963898917
 "0","3","Leinonen, Mr. Antti Gustaf","male",32,0,0,"STON/O 2. 3101292",7.925,"","S","Mr",-5.37788870056497
-"0","2","Collyer, Mr. Harvey","male",31,1,1,"C.A. 31921",26.25,"","S","Army",5.0708036101083
+"0","2","Collyer, Mr. Harvey","male",31,1,1,"C.A. 31921",26.25,"","S","Mr",5.0708036101083
 "0","3","Panula, Mrs. Juha (Maria Emilia Ojala)","female",41,0,5,"3101295",39.6875,"","S","Mrs",26.384611299435
 "0","3","Thorneycroft, Mr. Percival","male",24.4982627545589,1,0,"376564",16.1,"","S","Mr",2.79711129943503
 "0","3","Jensen, Mr. Hans Peder","male",20,0,0,"350050",7.8542,"","S","Mr",-5.44868870056497
@@ -646,7 +646,7 @@
 "1","3","Baclini, Miss. Eugenie","female",0.75,2,1,"2666",19.2583,"","C","Miss",5.95541129943503
 "1","1","Harper, Mr. Henry Sleeper","male",48,1,0,"PC 17572",76.7292,"D33","C","Mr",-10.7797916408669
 "0","3","Cor, Mr. Liudevit","male",19,0,0,"349231",7.8958,"","S","Mr",-5.40708870056497
-"1","1","Simonius-Blumer, Col. Oberst Alfons","male",56,0,0,"13213",35.5,"A26","C","Army",-52.0089916408669
+"1","1","Simonius-Blumer, Col. Oberst Alfons","male",56,0,0,"13213",35.5,"A26","C","Mr",-52.0089916408669
 "0","3","Willey, Mr. Edward","male",27.6839523921332,0,0,"S.O./P.P. 751",7.55,"","S","Mr",-5.75288870056497
 "1","3","Stanley, Miss. Amy Zillah Elsie","female",23,0,0,"CA. 2314",7.55,"","S","Miss",-5.75288870056497
 "0","3","Mitkoff, Mr. Mito","male",27.6810192632559,0,0,"349221",7.8958,"","S","Mr",-5.40708870056497
@@ -659,10 +659,10 @@
 "0","3","Bourke, Mrs. John (Catherine)","female",32,1,1,"364849",15.5,"","Q","Mrs",2.19711129943503
 "0","2","Eitemiller, Mr. George Floyd","male",23,0,0,"29751",13,"","S","Mr",-8.1791963898917
 "0","1","Newell, Mr. Arthur Webster","male",58,0,2,"35273",113.275,"D48","C","Mr",25.7660083591331
-"1","1","Frauenthal, Dr. Henry William","male",50,2,0,"PC 17611",133.65,"","S","Dr",46.1410083591331
+"1","1","Frauenthal, Dr. Henry William","male",50,2,0,"PC 17611",133.65,"","S","Mr",46.1410083591331
 "0","3","Badt, Mr. Mohamed","male",40,0,0,"2623",7.225,"","C","Mr",-6.07788870056497
-"0","1","Colley, Mr. Edward Pomeroy","male",47,0,0,"5727",25.5875,"E58","S","Army",-61.9214916408669
-"0","3","Coleff, Mr. Peju","male",36,0,0,"349210",7.4958,"","S","Army",-5.80708870056497
+"0","1","Colley, Mr. Edward Pomeroy","male",47,0,0,"5727",25.5875,"E58","S","Mr",-61.9214916408669
+"0","3","Coleff, Mr. Peju","male",36,0,0,"349210",7.4958,"","S","Mr",-5.80708870056497
 "1","3","Lindqvist, Mr. Eino William","male",20,1,0,"STON/O 2. 3101285",7.925,"","S","Mr",-5.37788870056497
 "0","2","Hickman, Mr. Lewis","male",32,2,0,"S.O.C. 14879",73.5,"","S","Mr",52.3208036101083
 "0","2","Butler, Mr. Reginald Fenton","male",25,0,0,"234686",13,"","S","Mr",-8.1791963898917
@@ -678,7 +678,7 @@
 "0","3","Sawyer, Mr. Frederick Charles","male",24.5,0,0,"342826",8.05,"","S","Mr",-5.25288870056497
 "1","3","Turja, Miss. Anna Sofia","female",18,0,0,"4138",9.8417,"","S","Miss",-3.46118870056497
 "0","3","Goodwin, Mrs. Frederick (Augusta Tyler)","female",43,1,6,"CA 2144",46.9,"","S","Mrs",33.597111299435
-"1","1","Cardeza, Mr. Thomas Drake Martinez","male",36,0,1,"PC 17755",512.3292,"B51 B53 B55","C","Dr",424.820208359133
+"1","1","Cardeza, Mr. Thomas Drake Martinez","male",36,0,1,"PC 17755",512.3292,"B51 B53 B55","C","Mr",424.820208359133
 "0","3","Peters, Miss. Katie","female",25.0195964652688,0,0,"330935",8.1375,"","Q","Miss",-5.16538870056497
 "1","1","Hassab, Mr. Hammad","male",27,0,0,"PC 17572",76.7292,"D49","C","Mr",-10.7797916408669
 "0","3","Olsvigen, Mr. Thor Anderson","male",20,0,0,"6563",9.225,"","S","Mr",-4.07788870056497
@@ -693,7 +693,7 @@
 "1","3","Karun, Miss. Manca","female",4,0,1,"349256",13.4167,"","C","Miss",0.113811299435028
 "1","3","Lam, Mr. Ali","male",27.2687865754623,0,0,"1601",56.4958,"","S","Mr",43.192911299435
 "0","3","Saad, Mr. Khalil","male",25,0,0,"2672",7.225,"","C","Mr",-6.07788870056497
-"0","1","Weir, Col. John","male",60,0,0,"113800",26.55,"","S","Army",-60.9589916408669
+"0","1","Weir, Col. John","male",60,0,0,"113800",26.55,"","S","Mr",-60.9589916408669
 "0","2","Chapman, Mr. Charles Henry","male",52,0,0,"248731",13.5,"","S","Mr",-7.6791963898917
 "0","3","Kelly, Mr. James","male",44,0,0,"363592",8.05,"","S","Mr",-5.25288870056497
 "1","3","Mullens, Miss. Katherine ""Katie""","female",25.0230249519438,0,0,"35852",7.7333,"","Q","Miss",-5.56958870056497
@@ -708,7 +708,7 @@
 "1","2","Kelly, Mrs. Florence ""Fannie""","female",45,0,0,"223596",13.5,"","S","Mrs",-7.6791963898917
 "1","1","Calderhead, Mr. Edward Pennington","male",42,0,0,"PC 17476",26.2875,"E24","S","Mr",-61.2214916408669
 "1","1","Cleaver, Miss. Alice","female",22,0,0,"113781",151.55,"","S","Miss",64.0410083591331
-"1","3","Moubarek, Master. Halim Gonios (""William George"")","male",23.7600945100115,1,1,"2661",15.2458,"","C","Master",1.94291129943503
+"1","3","Moubarek, Master. Halim Gonios (""William George"")","male",23.7600945100115,1,1,"2661",15.2458,"","C","Mr",1.94291129943503
 "1","1","Mayne, Mlle. Berthe Antonine (""Mrs de Villiers"")","female",24,0,0,"PC 17482",49.5042,"C90","C","Miss",-38.0047916408669
 "0","1","Klaber, Mr. Herman","male",42.7493825138593,0,0,"113028",26.55,"C124","S","Mr",-60.9589916408669
 "1","1","Taylor, Mr. Elmer Zebley","male",48,1,0,"19996",52,"C126","S","Mr",-35.5089916408669
@@ -744,28 +744,28 @@
 "1","1","Ryerson, Miss. Susan Parker ""Suzette""","female",21,2,2,"PC 17608",262.375,"B57 B59 B63 B66","C","Miss",174.866008359133
 "0","3","McNamee, Mr. Neal","male",24,1,0,"376566",16.1,"","S","Mr",2.79711129943503
 "1","3","Stranden, Mr. Juho","male",31,0,0,"STON/O 2. 3101288",7.925,"","S","Mr",-5.37788870056497
-"0","1","Crosby, Capt. Edward Gifford","male",70,1,1,"WE/P 5735",71,"B22","S","Army",-16.5089916408669
+"0","1","Crosby, Capt. Edward Gifford","male",70,1,1,"WE/P 5735",71,"B22","S","Mr",-16.5089916408669
 "0","3","Abbott, Mr. Rossmore Edward","male",16,1,1,"C.A. 2673",20.25,"","S","Mr",6.94711129943503
 "1","2","Sinkkonen, Miss. Anna","female",30,0,0,"250648",13,"","S","Miss",-8.1791963898917
 "0","1","Marvin, Mr. Daniel Warner","male",19,1,0,"113773",53.1,"D30","S","Mr",-34.4089916408669
 "0","3","Connaghton, Mr. Michael","male",31,0,0,"335097",7.75,"","Q","Mr",-5.55288870056497
 "1","2","Wells, Miss. Joan","female",4,1,1,"29103",23,"","S","Miss",1.8208036101083
-"1","3","Moor, Master. Meier","male",6,0,1,"392096",12.475,"E121","S","Master",-0.827888700564973
+"1","3","Moor, Master. Meier","male",6,0,1,"392096",12.475,"E121","S","Mr",-0.827888700564973
 "0","3","Vande Velde, Mr. Johannes Joseph","male",33,0,0,"345780",9.5,"","S","Mr",-3.80288870056497
 "0","3","Jonkoff, Mr. Lalio","male",23,0,0,"349204",7.8958,"","S","Mr",-5.40708870056497
 "1","2","Herman, Mrs. Samuel (Jane Laver)","female",48,1,2,"220845",65,"","S","Mrs",43.8208036101083
-"1","2","Hamalainen, Master. Viljo","male",0.67,1,1,"250649",14.5,"","S","Master",-6.6791963898917
+"1","2","Hamalainen, Master. Viljo","male",0.67,1,1,"250649",14.5,"","S","Mr",-6.6791963898917
 "0","3","Carlsson, Mr. August Sigfrid","male",28,0,0,"350042",7.7958,"","S","Mr",-5.50708870056497
 "0","2","Bailey, Mr. Percy Andrew","male",18,0,0,"29108",11.5,"","S","Mr",-9.6791963898917
 "0","3","Theobald, Mr. Thomas Leonard","male",34,0,0,"363294",8.05,"","S","Mr",-5.25288870056497
-"1","1","Rothes, the Countess. of (Lucy Noel Martha Dyer-Edwards)","female",33,0,0,"110152",86.5,"B77","S","Noble",-1.00899164086687
+"1","1","Rothes, the Countess. of (Lucy Noel Martha Dyer-Edwards)","female",33,0,0,"110152",86.5,"B77","S","Mrs",-1.00899164086687
 "0","3","Garfirth, Mr. John","male",27.6250014213479,0,0,"358585",14.5,"","S","Mr",1.19711129943503
 "0","3","Nirva, Mr. Iisakki Antino Aijo","male",41,0,0,"SOTON/O2 3101272",7.125,"","S","Mr",-6.17788870056497
 "1","3","Barah, Mr. Hanna Assi","male",20,0,0,"2663",7.2292,"","C","Mr",-6.07368870056497
 "1","1","Carter, Mrs. William Ernest (Lucile Polk)","female",36,1,2,"113760",120,"B96 B98","S","Mrs",32.4910083591331
 "0","3","Eklund, Mr. Hans Linus","male",16,0,0,"347074",7.775,"","S","Mr",-5.52788870056497
 "1","1","Hogeboom, Mrs. John C (Anna Andrews)","female",51,1,0,"13502",77.9583,"D11","S","Mrs",-9.55069164086687
-"0","1","Brewe, Dr. Arthur Jackson","male",42.638690403248,0,0,"112379",39.6,"","C","Dr",-47.9089916408669
+"0","1","Brewe, Dr. Arthur Jackson","male",42.638690403248,0,0,"112379",39.6,"","C","Mr",-47.9089916408669
 "0","3","Mangan, Miss. Mary","female",30.5,0,0,"364850",7.75,"","Q","Miss",-5.55288870056497
 "0","3","Moran, Mr. Daniel J","male",24.4299814142968,1,0,"371110",24.15,"","Q","Mr",10.847111299435
 "0","3","Gronnestad, Mr. Daniel Danielsen","male",32,0,0,"8471",8.3625,"","S","Mr",-4.94038870056497
@@ -786,8 +786,8 @@
 "0","3","Ali, Mr. William","male",25,0,0,"SOTON/O.Q. 3101312",7.05,"","S","Mr",-6.25288870056497
 "0","3","Harmer, Mr. Abraham (David Lishin)","male",25,0,0,"374887",7.25,"","S","Mr",-6.05288870056497
 "1","3","Sjoblom, Miss. Anna Sofia","female",18,0,0,"3101265",7.4958,"","S","Miss",-5.80708870056497
-"0","3","Rice, Master. George Hugh","male",8,4,1,"382652",29.125,"","Q","Master",15.822111299435
-"1","3","Dean, Master. Bertram Vere","male",1,1,2,"C.A. 2315",20.575,"","S","Master",7.27211129943503
+"0","3","Rice, Master. George Hugh","male",8,4,1,"382652",29.125,"","Q","Mr",15.822111299435
+"1","3","Dean, Master. Bertram Vere","male",1,1,2,"C.A. 2315",20.575,"","S","Mr",7.27211129943503
 "0","1","Guggenheim, Mr. Benjamin","male",46,0,0,"PC 17593",79.2,"B82 B84","C","Mr",-8.30899164086686
 "0","3","Keane, Mr. Andrew ""Andy""","male",27.6822559613193,0,0,"12460",7.75,"","Q","Mr",-5.55288870056497
 "0","2","Gaskell, Mr. Alfred","male",16,0,0,"239865",26,"","S","Mr",4.8208036101083
@@ -795,14 +795,14 @@
 "0","1","Hoyt, Mr. William Fisher","male",42.7142171995166,0,0,"PC 17600",30.6958,"","C","Mr",-56.8131916408669
 "0","3","Dantcheff, Mr. Ristiu","male",25,0,0,"349203",7.8958,"","S","Mr",-5.40708870056497
 "0","2","Otter, Mr. Richard","male",39,0,0,"28213",13,"","S","Mr",-8.1791963898917
-"1","1","Leader, Dr. Alice (Farnham)","female",49,0,0,"17465",25.9292,"D17","S","Dr",-61.5797916408669
+"1","1","Leader, Dr. Alice (Farnham)","female",49,0,0,"17465",25.9292,"D17","S","Mr",-61.5797916408669
 "1","3","Osman, Mrs. Mara","female",31,0,0,"349244",8.6833,"","S","Mrs",-4.61958870056497
 "0","3","Ibrahim Shawah, Mr. Yousseff","male",30,0,0,"2685",7.2292,"","C","Mr",-6.07368870056497
 "0","3","Van Impe, Mrs. Jean Baptiste (Rosalie Paula Govaert)","female",30,1,1,"345773",24.15,"","S","Mrs",10.847111299435
 "0","2","Ponesell, Mr. Martin","male",34,0,0,"250647",13,"","S","Mr",-8.1791963898917
-"1","2","Collyer, Mrs. Harvey (Charlotte Annie Tate)","female",31,1,1,"C.A. 31921",26.25,"","S","Army",5.0708036101083
-"1","1","Carter, Master. William Thornton II","male",11,1,2,"113760",120,"B96 B98","S","Master",32.4910083591331
-"1","3","Thomas, Master. Assad Alexander","male",0.42,0,1,"2625",8.5167,"","C","Master",-4.78618870056497
+"1","2","Collyer, Mrs. Harvey (Charlotte Annie Tate)","female",31,1,1,"C.A. 31921",26.25,"","S","Mr",5.0708036101083
+"1","1","Carter, Master. William Thornton II","male",11,1,2,"113760",120,"B96 B98","S","Mr",32.4910083591331
+"1","3","Thomas, Master. Assad Alexander","male",0.42,0,1,"2625",8.5167,"","C","Mr",-4.78618870056497
 "1","3","Hedman, Mr. Oskar Arvid","male",27,0,0,"347089",6.975,"","S","Mr",-6.32788870056497
 "0","3","Johansson, Mr. Karl Johan","male",31,0,0,"347063",7.775,"","S","Mr",-5.52788870056497
 "0","1","Andrews, Mr. Thomas Jr","male",39,0,0,"112050",0,"A36","S","Mr",-87.5089916408669
@@ -818,19 +818,19 @@
 "0","3","Heininen, Miss. Wendla Maria","female",23,0,0,"STON/O2. 3101290",7.925,"","S","Miss",-5.37788870056497
 "0","2","Mallet, Mr. Albert","male",31,1,1,"S.C./PARIS 2079",37.0042,"","C","Mr",15.8250036101083
 "0","3","Holm, Mr. John Fredrik Alexander","male",43,0,0,"C 7075",6.45,"","S","Mr",-6.85288870056497
-"0","3","Skoog, Master. Karl Thorsten","male",10,3,2,"347088",27.9,"","S","Master",14.597111299435
+"0","3","Skoog, Master. Karl Thorsten","male",10,3,2,"347088",27.9,"","S","Mr",14.597111299435
 "1","1","Hays, Mrs. Charles Melville (Clara Jennings Gregg)","female",52,1,1,"12749",93.5,"B69","S","Mrs",5.99100835913313
 "1","3","Lulic, Mr. Nikola","male",27,0,0,"315098",8.6625,"","S","Mr",-4.64038870056497
-"0","1","Reuchlin, Jonkheer. John George","male",38,0,0,"19972",0,"","S","Noble",-87.5089916408669
+"0","1","Reuchlin, Jonkheer. John George","male",38,0,0,"19972",0,"","S","Mr",-87.5089916408669
 "1","3","Moor, Mrs. (Beila)","female",27,0,1,"392096",12.475,"E121","S","Mrs",-0.827888700564973
-"0","3","Panula, Master. Urho Abraham","male",2,4,1,"3101295",39.6875,"","S","Master",26.384611299435
+"0","3","Panula, Master. Urho Abraham","male",2,4,1,"3101295",39.6875,"","S","Mr",26.384611299435
 "0","3","Flynn, Mr. John","male",27.6890416845751,0,0,"368323",6.95,"","Q","Mr",-6.35288870056497
 "0","3","Lam, Mr. Len","male",27.2687865754623,0,0,"1601",56.4958,"","S","Mr",43.192911299435
-"1","2","Mallet, Master. Andre","male",1,0,2,"S.C./PARIS 2079",37.0042,"","C","Master",15.8250036101083
+"1","2","Mallet, Master. Andre","male",1,0,2,"S.C./PARIS 2079",37.0042,"","C","Mr",15.8250036101083
 "1","3","McCormack, Mr. Thomas Joseph","male",27.6822559613193,0,0,"367228",7.75,"","Q","Mr",-5.55288870056497
 "1","1","Stone, Mrs. George Nelson (Martha Evelyn)","female",62,0,0,"113572",80,"B28","S","Mrs",-7.50899164086687
 "1","3","Yasbeck, Mrs. Antoni (Selini Alexander)","female",15,1,0,"2659",14.4542,"","C","Mrs",1.15131129943503
-"1","2","Richards, Master. George Sibley","male",0.83,1,1,"29106",18.75,"","S","Master",-2.4291963898917
+"1","2","Richards, Master. George Sibley","male",0.83,1,1,"29106",18.75,"","S","Mr",-2.4291963898917
 "0","3","Saad, Mr. Amin","male",27.6866734671588,0,0,"2671",7.2292,"","C","Mr",-6.07368870056497
 "0","3","Augustsson, Mr. Albert","male",23,0,0,"347468",7.8542,"","S","Mr",-5.44868870056497
 "0","3","Allum, Mr. Owen George","male",18,0,0,"2223",8.3,"","S","Mr",-5.00288870056497
@@ -847,9 +847,9 @@
 "0","3","Abbing, Mr. Anthony","male",42,0,0,"C.A. 5547",7.55,"","S","Mr",-5.75288870056497
 "0","3","Sage, Mr. Douglas Bullen","male",0.76189367647805,8,2,"CA. 2343",69.55,"","S","Mr",56.247111299435
 "0","3","Markoff, Mr. Marin","male",35,0,0,"349213",7.8958,"","C","Mr",-5.40708870056497
-"0","2","Harper, Rev. John","male",28,0,1,"248727",33,"","S","Dr",11.8208036101083
+"0","2","Harper, Rev. John","male",28,0,1,"248727",33,"","S","Mr",11.8208036101083
 "1","1","Goldenberg, Mrs. Samuel L (Edwiga Grabowska)","female",36.4462482701189,1,0,"17453",89.1042,"C92","C","Mrs",1.59520835913314
-"0","3","Andersson, Master. Sigvard Harald Elias","male",4,4,2,"347082",31.275,"","S","Master",17.972111299435
+"0","3","Andersson, Master. Sigvard Harald Elias","male",4,4,2,"347082",31.275,"","S","Mr",17.972111299435
 "0","3","Svensson, Mr. Johan","male",74,0,0,"347060",7.775,"","S","Mr",-5.52788870056497
 "0","3","Boulos, Miss. Nourelain","female",9,1,1,"2678",15.2458,"","C","Miss",1.94291129943503
 "1","1","Lines, Miss. Mary Conover","female",16,0,1,"PC 17592",39.4,"D28","S","Miss",-48.1089916408669
@@ -868,7 +868,7 @@
 "1","2","Duran y More, Miss. Asuncion","female",27,1,0,"SC/PARIS 2149",13.8583,"","C","Miss",-7.3208963898917
 "0","1","Roebling, Mr. Washington Augustus II","male",31,0,0,"PC 17590",50.4958,"A24","S","Mr",-37.0131916408669
 "0","3","van Melkebeke, Mr. Philemon","male",27.6674121916971,0,0,"345777",9.5,"","S","Mr",-3.80288870056497
-"1","3","Johnson, Master. Harold Theodor","male",4,1,1,"347742",11.1333,"","S","Master",-2.16958870056497
+"1","3","Johnson, Master. Harold Theodor","male",4,1,1,"347742",11.1333,"","S","Mr",-2.16958870056497
 "0","3","Balkic, Mr. Cerin","male",26,0,0,"349248",7.8958,"","S","Mr",-5.40708870056497
 "1","1","Beckwith, Mrs. Richard Leonard (Sallie Monypeny)","female",47,1,1,"11751",52.5542,"D35","S","Mrs",-34.9547916408669
 "0","1","Carlsson, Mr. Frans Olof","male",33,0,0,"695",5,"B51 B53 B55","S","Mr",-82.5089916408669
@@ -885,7 +885,7 @@
 "0","2","Banfield, Mr. Frederick James","male",28,0,0,"C.A./SOTON 34068",10.5,"","S","Mr",-10.6791963898917
 "0","3","Sutehall, Mr. Henry Jr","male",25,0,0,"SOTON/OQ 392076",7.05,"","S","Mr",-6.25288870056497
 "0","3","Rice, Mrs. William (Margaret Norton)","female",39,0,5,"382652",29.125,"","Q","Mrs",15.822111299435
-"0","2","Montvila, Rev. Juozas","male",27,0,0,"211536",13,"","S","Dr",-8.1791963898917
+"0","2","Montvila, Rev. Juozas","male",27,0,0,"211536",13,"","S","Mr",-8.1791963898917
 "1","1","Graham, Miss. Margaret Edith","female",19,0,0,"112053",30,"B42","S","Miss",-57.5089916408669
 "0","3","Johnston, Miss. Catherine Helen ""Carrie""","female",20.2857188596895,1,2,"W./C. 6607",23.45,"","S","Miss",10.147111299435
 "1","1","Behr, Mr. Karl Howell","male",26,0,0,"111369",30,"C148","C","Mr",-57.5089916408669
