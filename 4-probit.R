@@ -10,7 +10,7 @@ load("Data/test_clean.RData")   # 418 obs
 ###
 
 # Create probit with SEX, PCLASS, FARE, and AGE
-probit <- glm(survived ~ sex + pclass + fare + age, data = train,
+probit <- glm(survived ~ sex.name + pclass + age + fare.distance + fare, data = train,
                 family = binomial(link = "probit"))
 summary(probit)
 
@@ -19,7 +19,7 @@ summary(probit)
 ###
 
 # Make our prediction on the TRAIN data set [For calculating error]
-train$survived_pred <- predict(test, train, type = "response")
+train$survived_pred <- predict(probit, train, type = "response")
 
 # Make a prediction with our probit on TEST
 test$survived <- predict(probit, test, type = "response")

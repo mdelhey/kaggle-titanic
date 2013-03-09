@@ -10,7 +10,8 @@ load("Data/test_clean.RData")   # 418 obs
 ###
 
 # Create the SVM model with SEX, PCLASS, FARE, and AGE
-svm.model <- ksvm(survived ~ sex + pclass + fare + age, data = train)
+svm.model <- ksvm(survived ~ sex.name + pclass + age + fare, data = train)
+svm.model <- ksvm(survived ~ sex + pclass + fare + embarked + age, data = train)
 
 ###
 ### Saving our model and prediction as a new CSV

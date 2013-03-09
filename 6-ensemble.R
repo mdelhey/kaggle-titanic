@@ -22,9 +22,7 @@ test$survived_rf <- predict(forest, test)
 test$survived_svm <- predict(svm.model, test, type = "response")
 
 # Probit
-test$survived_probit <- predict(probit, test)
-test$survived_probit[test$survived >= .5] <- 2
-test$survived_probit[test$survived < .5] <- 1
+
 
 ###
 ### Combine Predictions
@@ -45,9 +43,10 @@ combined[combined >= 5] <- 1
 
 # Make our ensamble prediction
 test$survived <- combined
+test$
 
-write.csv(test, "Submissions/ensemble-08.csv")
+write.csv(test, "Submissions/ensemble-11-upload-me.csv")
 
-# Test to see if our predictions match the highest
+# Compare to highest
 highest <- read.csv("Submissions/highest.csv")
-which(highest$survived != test$survived)
+which(test$survived != highest$survived)

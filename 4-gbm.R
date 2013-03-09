@@ -13,8 +13,8 @@ load("Data/test_clean.RData")   # 418 obs
 ###
 
 # Create random forest based on PCLASS, SEX, FARE, AGE
-gbm <- gbm(survived ~ sex + pclass + fare + age, 
-           data = train, distribution = "adaboost", n.trees = 500)
+gbm <- gbm(survived ~ sex.name + pclass + fare.distance + age, 
+           data = train, distribution = "adaboost", n.trees = 1000)
 
 ###
 ### Saving our model and prediction as a new CSV
