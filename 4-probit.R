@@ -14,12 +14,17 @@ probit <- glm(survived ~ sex.name + pclass + age + fare.distance + fare, data = 
                 family = binomial(link = "probit"))
 summary(probit)
 
+# Save model as string
+model <- 'glm(survived ~ sex.name + pclass + age + fare.distance + fare, data = train, family = binomial(link = "probit"))'
+
 ###
 ### Saving our model and prediction as a new CSV
 ###
 
 # Make our prediction on the TRAIN data set [For calculating error]
 train$survived_pred <- predict(probit, train, type = "response")
+train$survived_pred[train$survived_pred >= 0.5] <- 1
+train$survived_pred[train$survived_pred < 0.5] <- 0
 
 # Make a prediction with our probit on TEST
 test$survived <- predict(probit, test, type = "response")

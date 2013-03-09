@@ -27,8 +27,6 @@ test$survived <- 0
 train$survived <- factor(train$survived)
 train$sex <- factor(train$sex)
 train$pclass <- factor(train$pclass)
-train$embarked[train$embarked == ""] <- "S"
-train$embarked <- factor(train$embarked)
 test$survived <- factor(test$survived)
 test$sex <- factor(test$sex)
 test$pclass <- factor(test$pclass)
@@ -72,6 +70,7 @@ test$fare[is.na(test$fare)] <- predict(fare.mod, test)[is.na(test$fare)]
 
 # Replace missing values in embarked with most popular
 train$embarked[train$embarked == ""] <- "S"
+train$embarked <- factor(train$embarked)
 
 ###
 ### Create "sex.name" variable"
