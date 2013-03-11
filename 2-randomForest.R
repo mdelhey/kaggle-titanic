@@ -13,8 +13,8 @@ load("Data/test_clean.RData")   # 418 obs
 ###
 
 # Create random forest based on PCLASS, SEX, FARE, and AGE
-forest <- randomForest(survived ~ sex.name + pclass + age + fare.distance + fare, 
-                       data = train, ntree = 5000, importance = TRUE)
+forest <- randomForest(survived ~ sex + pclass + age + fare, 
+                       data = train, ntree = 15000, importance = TRUE)
 
 summary(forest)
 

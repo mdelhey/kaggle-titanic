@@ -108,6 +108,6 @@ cv_kfolds <- function(model, k = 5) {
 #cv_kfolds(model, k = 5)
 
 # Sofia
-source("4-sofia.R")
-train_error(survived_pred)
-cv_kfolds(model, k = 5)
+#source("4-sofia.R")
+#train_error(survived_pred)
+#cv_kfolds(model, k = 5)
