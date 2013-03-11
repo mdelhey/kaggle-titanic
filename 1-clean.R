@@ -27,8 +27,6 @@ test$survived <- 0
 train$survived <- factor(train$survived)
 train$sex <- factor(train$sex)
 train$pclass <- factor(train$pclass)
-train$embarked[train$embarked == ""] <- "S"
-train$embarked <- factor(train$embarked)
 test$survived <- factor(test$survived)
 test$sex <- factor(test$sex)
 test$pclass <- factor(test$pclass)
@@ -72,6 +70,7 @@ test$fare[is.na(test$fare)] <- predict(fare.mod, test)[is.na(test$fare)]
 
 # Replace missing values in embarked with most popular
 train$embarked[train$embarked == ""] <- "S"
+train$embarked <- factor(train$embarked)
 
 ###
 ### Create "sex.name" variable"
@@ -85,15 +84,15 @@ train$sex.name[!is.na(str_extract(train$name, "Mme"))] <- "Mrs"
 train$sex.name[!is.na(str_extract(train$name, "Miss"))] <- "Miss"
 train$sex.name[!is.na(str_extract(train$name, "Ms"))] <- "Miss"
 train$sex.name[!is.na(str_extract(train$name, "Mlle"))] <- "Miss"
-train$sex.name[!is.na(str_extract(train$name, "Capt"))] <- "Army"
-train$sex.name[!is.na(str_extract(train$name, "Major"))] <- "Army"
-train$sex.name[!is.na(str_extract(train$name, "Col"))] <- "Army"
-train$sex.name[!is.na(str_extract(train$name, "Master"))] <- "Master"
-train$sex.name[!is.na(str_extract(train$name, "Rev"))] <- "Dr"
-train$sex.name[!is.na(str_extract(train$name, "Dr"))] <- "Dr"
-train$sex.name[!is.na(str_extract(train$name, "Don"))] <- "Noble"
-train$sex.name[!is.na(str_extract(train$name, "Countess"))] <- "Noble"
-train$sex.name[!is.na(str_extract(train$name, "Jonkheer"))] <- "Noble"
+train$sex.name[!is.na(str_extract(train$name, "Capt"))] <- "Mr"
+train$sex.name[!is.na(str_extract(train$name, "Major"))] <- "Mr"
+train$sex.name[!is.na(str_extract(train$name, "Col"))] <- "Mr"
+train$sex.name[!is.na(str_extract(train$name, "Master"))] <- "Mr"
+train$sex.name[!is.na(str_extract(train$name, "Rev"))] <- "Mr"
+train$sex.name[!is.na(str_extract(train$name, "Dr"))] <- "Mr"
+train$sex.name[!is.na(str_extract(train$name, "Don"))] <- "Mr"
+train$sex.name[!is.na(str_extract(train$name, "Countess"))] <- "Mrs"
+train$sex.name[!is.na(str_extract(train$name, "Jonkheer"))] <- "Mr"
 
 test$sex.name[!is.na(str_extract(test$name, "Mr"))] <- "Mr"
 test$sex.name[!is.na(str_extract(test$name, "Mrs"))] <- "Mrs"
@@ -101,15 +100,15 @@ test$sex.name[!is.na(str_extract(test$name, "Mme"))] <- "Mrs"
 test$sex.name[!is.na(str_extract(test$name, "Miss"))] <- "Miss"
 test$sex.name[!is.na(str_extract(test$name, "Ms"))] <- "Miss"
 test$sex.name[!is.na(str_extract(test$name, "Mlle"))] <- "Miss"
-test$sex.name[!is.na(str_extract(test$name, "Capt"))] <- "Army"
-test$sex.name[!is.na(str_extract(test$name, "Major"))] <- "Army"
-test$sex.name[!is.na(str_extract(test$name, "Col"))] <- "Army"
-test$sex.name[!is.na(str_extract(test$name, "Master"))] <- "Master"
-test$sex.name[!is.na(str_extract(test$name, "Rev"))] <- "Dr"
-test$sex.name[!is.na(str_extract(test$name, "Dr"))] <- "Dr"
-test$sex.name[!is.na(str_extract(test$name, "Don"))] <- "Noble"
-test$sex.name[!is.na(str_extract(test$name, "Countess"))] <- "Noble"
-test$sex.name[!is.na(str_extract(test$name, "Jonkheer"))] <- "Noble"
+test$sex.name[!is.na(str_extract(test$name, "Capt"))] <- "Mr"
+test$sex.name[!is.na(str_extract(test$name, "Major"))] <- "Mr"
+test$sex.name[!is.na(str_extract(test$name, "Col"))] <- "Mr"
+test$sex.name[!is.na(str_extract(test$name, "Master"))] <- "Mr"
+test$sex.name[!is.na(str_extract(test$name, "Rev"))] <- "Mr"
+test$sex.name[!is.na(str_extract(test$name, "Dr"))] <- "Mr"
+test$sex.name[!is.na(str_extract(test$name, "Don"))] <- "Mr"
+test$sex.name[!is.na(str_extract(test$name, "Countess"))] <- "Mrs"
+test$sex.name[!is.na(str_extract(test$name, "Jonkheer"))] <- "Mr"
 
 test$name[test$sex.name == 0]
 train$name[train$sex.name == 0]

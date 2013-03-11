@@ -1,8 +1,7 @@
 # Goal:     (1) Construct basic randomForest models from the data
 #           (2) Select the best model (Model selection)
 #           (3) Save a prediction with our best randomForest
-library(randomForest)
-library(plyr)
+library(RSofia)
 
 # Load in the cleaned data sets
 load("Data/train_clean.RData")  # 891 obs
@@ -13,26 +12,24 @@ load("Data/test_clean.RData")   # 418 obs
 ###
 
 # Create random forest based on PCLASS, SEX, FARE, and AGE
-forest <- randomForest(survived ~ sex.name + pclass + age + fare.distance + fare, 
-                       data = train, ntree = 5000, importance = TRUE)
+train$survived <- as.numeric(train$survived)
+train$survived[train$survived == 1] <- -1
+train$survived[train$survived == 2] <- 1
+sf <- sofia(survived ~ sex + pclass + age + fare, data = train, learner_type="logreg-pegasos")
 
-summary(forest)
-
-# Extract the importance of each variable
-importance(forest)
-
-# Save our model as a string
-model <- "randomForest(survived ~ sex.name + pclass + age + fare.distance + fare, data = train, ntree = 5000, importance = TRUE)"
+model <- 'sofia(survived ~ sex + pclass + age + fare, data = train, learner_type="logreg-pegasos")'
 
 ###
 ### Saving our model and prediction as a new CSV
 ###
 
 # Make our prediction on the TRAIN data set [For calculating error]
-train$survived_pred <- predict(forest, train)
+train$survived_pred <- predict(sf, train, prediction_type = "logistic")
 
 # Make our prediction on the TEST data set
-test$survived <- predict(forest, test)
+test$survived <- predict(sf, test, prediction_type = "logistic")
+test$survived[test$survived >= 0.5] <- 1
+test$survived[test$survived < 0.5] <- 0
 
 # save csv file for submission
 write.csv(test, "Submissions/randomForest-04.csv")
