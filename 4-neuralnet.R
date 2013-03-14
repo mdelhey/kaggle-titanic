@@ -50,6 +50,7 @@ vectors.test$pclass.test <- factor(vectors.test$pclass)
 
 net3 <- nnet(survived ~ sex + pclass + fare + age, data = train, size = 2,
              linout = FALSE, maxit = 10000)
+model <- "nnet(survived ~ sex + pclass + fare + age, data = train, size = 2, linout = FALSE, maxit = 10000)"
 
 #net4 <- nnet(survived ~ sex.name + pclass + fare + age, data = train, size = 2,
 #             linout = FALSE, maxit = 10000) 

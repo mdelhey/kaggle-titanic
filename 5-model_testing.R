@@ -5,10 +5,6 @@ library(stringr)
 load("Data/train_clean.RData")  # 891 obs
 load("Data/test_clean.RData")   # 418 obs
 
-# Load in our models (edit this!)
-#source("3-SVM.R")
-#source("4-probit.R")
-
 ###
 ### Training Error
 ###
@@ -66,8 +62,6 @@ cv_kfolds <- function(model, k = 5) {
     
     # Predict on the new_test data set with our model
     test_new$survived_pred <- predict(temp_model, test_new)
-    test_new$survived_pred[test_new$survived_pred >= 0.5] <- 1
-    test_new$survived_pred[test_new$survived_pred < 0.5] <- 0
     
     # Find the error in our model for new_test
     errors[i] <- ((length(which(test_new$survived_pred == test_new$survived))) /
@@ -92,15 +86,15 @@ cv_kfolds <- function(model, k = 5) {
 ### Run all tests on each model
 ###
 
-# randomForest
+# randomForest: 83.5 normal / 83.38 family
 #source("2-randomForest.R")
 #train_error(survived_pred)
-#cv_kfolds(model, k = 5)
+#cv_kfolds(model, k = 9)
 
-# SVM
+# SVM: 83.37935 normal
 #source("3-SVM.R")
 #train_error(survived_pred)
-#cv_kfolds(model, k = 5)
+#cv_kfolds(model, k = 9)
 
 # Probit
 #source("4-probit.R")
@@ -111,3 +105,8 @@ cv_kfolds <- function(model, k = 5) {
 #source("4-sofia.R")
 #train_error(survived_pred)
 #cv_kfolds(model, k = 5)
+
+# NiaveBayes 83.37935 normal
+source("niave-bayes.R")
+train_error(survived_pred)
+cv_kfolds(model, k = 9)

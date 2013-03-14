@@ -13,7 +13,7 @@ load("Data/test_clean.RData")   # 418 obs
 svm.model <- ksvm(survived ~ sex + pclass + age + fare, data = train)
 
 # Save our model as a string
-model <- "ksvm(survived ~ sex.name + pclass + age + fare.distance + fare, data = train)"
+model <- "ksvm(survived ~ sex + pclass + age + fare, data = train)"
 
 ###
 ### Saving our model and prediction as a new CSV

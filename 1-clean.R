@@ -148,6 +148,18 @@ test <- transform(test, fare.distance = fare - fare_avg)
 test <- test[, !names(test) %in% c("fare_avg")]
 
 ###
+### Add family column
+###
+train$family <- NA
+test$family <- NA
+train$family[which(train$sibsp != 0 | train$parch != 0)] <- 1
+train$family[which(train$sibsp == 0 & train$parch == 0)] <- 0
+test$family[which(test$sibsp != 0 | test$parch != 0)] <- 1
+test$family[which(test$sibsp == 0 & test$parch == 0)] <- 0
+test$family <- factor(test$family)
+train$family <- factor(train$family)
+
+###
 ### Saving new data sets
 ###
 
