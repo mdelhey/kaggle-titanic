@@ -41,6 +41,19 @@ vectors.test$sex.test <- factor(vectors.test$sex)
 vectors.test$pclass.test <- factor(vectors.test$pclass)
 vectors.test$survived.test <- factor(vectors.test$survived)
 
+## Add family column
+train$family <- NA
+test$family <- NA
+
+train$family[which(train$sibsp != 0 | train$parch != 0)] <- 1
+train$family[which(train$sibsp == 0 & train$parch == 0)] <- 0
+
+test$family[which(test$sibsp != 0 | test$parch != 0)] <- 1
+test$family[which(test$sibsp == 0 & test$parch == 0)] <- 0
+
+test$family <- factor(test$family)
+train$family <- factor(train$family)
+
 # Create neural network based on PCLASS, SEX, and FARE
 net <- neuralnet(survived ~ sex + pclass + fare + age, data = vectors,
                  hidden = 2, err.fct="ce")
@@ -54,11 +67,15 @@ net3 <- nnet(survived ~ sex + pclass + fare + age, data = train, size = 2,
 net4 <- nnet(survived ~ sex.name + pclass + fare + age, data = train, size = 2,
              linout = FALSE, maxit = 10000) 
 
+net5 <- nnet(survived ~ sex.name + pclass + fare + age + family,
+             data = train, size = 2, linout = FALSE, maxit = 10000) 
+
 ## Get the result
 result <- compute(net, vectors.test)
 result2 <- compute(net2, vectors.test)
 result3 <- predict(net3, test, type = "class")
 result4 <- predict(net4, test, type = "class")
+result5 <- predict(net5, test, type = "class")
 
 ## Since neuralnet is being a bitch, we round values
 result$net.result[which(result$net.result < 1.5)] <- 1
@@ -77,6 +94,10 @@ test.net$survived <- result3
 test.net4 <- test
 test.net4$survived <- result4
 
+## Use result 5
+test.net5 <- test
+test.net5$survived <- result5
+
 ###
 ### Saving our model and prediction as a new CSV
 ###
@@ -85,3 +106,4 @@ test.net4$survived <- result4
 write.csv(test, "Submissions/neuralnet-01.csv")
 write.csv(test.net, "Submissions/neuralnet-02.csv")
 write.csv(test.net4, "Submissions/neuralnet-03.csv")
+write.csv(test.net5, "Submissions/neuralnet-04.csv")
