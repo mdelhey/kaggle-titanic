@@ -9,7 +9,7 @@ source("1-clean.R")
 # Source our models
 source("2-randomForest.R")
 source("3-SVM.R")
-source("4-probit.R")
+source("4-neuralnet.R")
 
 ###
 ### Gather predictions
@@ -21,8 +21,8 @@ test$survived_rf <- predict(forest, test)
 # SVM
 test$survived_svm <- predict(svm.model, test, type = "response")
 
-# Probit
-
+# Neural Net
+test$survived_nnet <- as.factor(predict(net3, test, type = "class"))
 
 ###
 ### Combine Predictions
@@ -30,7 +30,7 @@ test$survived_svm <- predict(svm.model, test, type = "response")
 
 vote <- as.numeric(test$survived_rf) + 
         as.numeric(test$survived_svm) +
-        as.numeric(test$survived_probit)
+        as.numeric(test$survived_nnet)
 
 # 0 is 0 
 # 4 is 0
@@ -43,9 +43,8 @@ combined[combined >= 5] <- 1
 
 # Make our ensamble prediction
 test$survived <- combined
-test$
 
-write.csv(test, "Submissions/ensemble-11-upload-me.csv")
+write.csv(test, "Submissions/ensemble-12.csv")
 
 # Compare to highest
 highest <- read.csv("Submissions/highest.csv")
