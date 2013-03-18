@@ -10,6 +10,7 @@
 #                   - test_clean.csv
 #                   - full.csv
 library(plyr)
+library(foreign)
 
 # Load the data sets
 train <- read.csv("Data/train.csv", stringsAsFactors = FALSE)  # 891 obs
@@ -167,6 +168,10 @@ train$family <- factor(train$family)
 # Open .RData with load()
 save("test", file = "Data/test_clean.RData")
 save("train", file = "Data/train_clean.RData")
+
+# Save as ARFF for WEKA using foreign
+write.arff(test, file = "Data/test_clean.ARFF")
+write.arff(train, file = "Data/train_clean.ARFF")
 
 # Also save .csv's just in case. These do not preserve data structures,
 # so don't use them in the analysis! 

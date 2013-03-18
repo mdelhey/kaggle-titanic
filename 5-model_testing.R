@@ -91,10 +91,15 @@ cv_kfolds <- function(model, k = 5) {
 #train_error(survived_pred)
 #cv_kfolds(model, k = 9)
 
-# SVM: 83.37935 normal
+# SVM: 83.37935 normal / x embarked
 #source("3-SVM.R")
 #train_error(survived_pred)
-#cv_kfolds(model, k = 9)
+#cv_kfolds(model, k = 891)
+
+# BDT: 82.94 normal / 82.82 embarked / 82.82 sex.name / 82.26 fare.distance
+source("bdt.R")
+train_error(survived_pred)
+cv_kfolds(model, k = 9)
 
 # Probit
 #source("4-probit.R")
@@ -107,6 +112,6 @@ cv_kfolds <- function(model, k = 5) {
 #cv_kfolds(model, k = 5)
 
 # NiaveBayes 83.37935 normal
-source("niave-bayes.R")
-train_error(survived_pred)
-cv_kfolds(model, k = 9)
+#source("niave-bayes.R")
+#train_error(survived_pred)
+#cv_kfolds(model, k = 9)

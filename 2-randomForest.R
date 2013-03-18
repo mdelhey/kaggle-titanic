@@ -13,7 +13,7 @@ load("Data/test_clean.RData")   # 418 obs
 ###
 
 # Create random forest based on PCLASS, SEX, FARE, and AGE
-forest <- randomForest(survived ~ sex + pclass + age + fare + family, 
+forest <- randomForest(survived ~ sex.name + pclass + age + fare + fare.distance, 
                        data = train, ntree = 15000, importance = TRUE)
 
 summary(forest)
@@ -22,7 +22,7 @@ summary(forest)
 importance(forest)
 
 # Save our model as a string
-model <- "randomForest(survived ~ sex + pclass + age + fare + family, data = train, ntree = 5000, importance = TRUE)"
+model <- "randomForest(survived ~ sex.name + pclass + age + fare + fare.distance, data = train, ntree = 5000, importance = TRUE)"
 
 ###
 ### Saving our model and prediction as a new CSV

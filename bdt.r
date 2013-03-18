@@ -16,18 +16,13 @@ load("Data/test_clean.RData")   # 418 obs
 ###
 boosted <- ada(survived ~ sex + pclass + age + fare, data = train)
 boosted2 <- ada(survived ~ sex.name + pclass + age + fare + family, 
-                data = train, max.iter = 20, verbose = TRUE)
-boosted3 <- ada(survived ~ sex.name + pclass + age + fare + family + 
-                  fare.distance + embarked, 
-                data = train, max.iter = 20, verbose = TRUE)
+                data = train, iter = 10000)
 
 ## Create C50 model
 crtree <- C5.0(survived ~ sex + pclass + age + fare, data = train)
 
 # Save our model as a string
-model <- "ada(survived ~ sex.name + pclass + age + fare + family + 
-                  fare.distance + embarked, 
-                data = train, max.iter = 20, verbose = TRUE)"
+model <- "ada(survived ~ sex.name + pclass + age + fare + family, data = train, iter = 500)"
 
 ###
 ### Saving our model and prediction as a new CSV
@@ -50,10 +45,9 @@ write.csv(test, "Submissions/bdt-01.csv")
 write.csv(test2, "Submissions/bdt-02.csv")
 write.csv(test3, "Submissions/bdt-03.csv")
 
-length(which(train$survived_pred3 != train$survived))
 ###
 ### CV
 ###
-source("5-model_testing.R")
-train_error(survived_pred)
-cv_kfolds(model, k = 9)
+#source("5-model_testing.R")
+#train_error(survived_pred)
+#cv_kfolds(model, k = 9)
