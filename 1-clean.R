@@ -160,6 +160,15 @@ test$family[which(test$sibsp == 0 & test$parch == 0)] <- 0
 test$family <- factor(test$family)
 train$family <- factor(train$family)
 
+### 
+###  Scale the non factors
+###
+train$age_scale <- (train$age-min(train$age))/(max(train$age-min(train$age)))
+train$fare_scale <- (train$fare-min(train$fare))/(max(train$fare-min(train$fare)))
+
+test$age_scale <- (test$age-min(test$age))/(max(test$age-min(test$age)))
+test$fare_scale <- (test$fare-min(test$fare))/(max(test$fare-min(test$fare)))
+
 ###
 ### Saving new data sets
 ###
