@@ -71,12 +71,19 @@ net4 <- nnet(survived ~ sex.name + pclass + fare + age, data = train, size = 2,
 net5 <- nnet(survived ~ sex.name + pclass + fare + age + family,
              data = train, size = 2, linout = FALSE, maxit = 10000) 
 
+net6 <- nnet(survived ~ sex.name + pclass + fare_scale + age_scale,
+             data = train, size = 2, linout = FALSE, maxit = 10000)
+
+model_net <- "nnet(survived ~ sex.name + pclass + fare_scale + age_scale,
+             data = train, size = 2, linout = FALSE, maxit = 10000)"
+
 ## Get the result
 result <- compute(net, vectors.test)
 result2 <- compute(net2, vectors.test)
 result3 <- predict(net3, test, type = "class")
 result4 <- predict(net4, test, type = "class")
 result5 <- predict(net5, test, type = "class")
+result6 <- predict(net6, test, type = "class")
 
 ## Since neuralnet is being a bitch, we round values
 result$net.result[which(result$net.result < 1.5)] <- 1
@@ -99,6 +106,10 @@ test.net4$survived <- result4
 test.net5 <- test
 test.net5$survived <- result5
 
+## Use result 6
+test.net6 <- test
+test.net6$survived <- result6
+
 ###
 ### Saving our model and prediction as a new CSV
 ###
@@ -108,6 +119,7 @@ write.csv(test, "Submissions/neuralnet-01.csv")
 write.csv(test.net, "Submissions/neuralnet-02.csv")
 write.csv(test.net4, "Submissions/neuralnet-03.csv")
 write.csv(test.net5, "Submissions/neuralnet-04.csv")
+write.csv(test.net6, "Submissions/neuralnet-05.csv")
 =======
 # Goal:     (1) Construct basic randomForest models from the data
 #           (2) Select the best model (Model selection)
