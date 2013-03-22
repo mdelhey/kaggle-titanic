@@ -88,7 +88,7 @@ train$sex.name[!is.na(str_extract(train$name, "Mlle"))] <- "Miss"
 train$sex.name[!is.na(str_extract(train$name, "Capt"))] <- "Mr"
 train$sex.name[!is.na(str_extract(train$name, "Major"))] <- "Mr"
 train$sex.name[!is.na(str_extract(train$name, "Col"))] <- "Mr"
-train$sex.name[!is.na(str_extract(train$name, "Master"))] <- "Mr"
+train$sex.name[!is.na(str_extract(train$name, "Master"))] <- "Mast"
 train$sex.name[!is.na(str_extract(train$name, "Rev"))] <- "Mr"
 train$sex.name[!is.na(str_extract(train$name, "Dr"))] <- "Mr"
 train$sex.name[!is.na(str_extract(train$name, "Don"))] <- "Mr"
@@ -104,7 +104,7 @@ test$sex.name[!is.na(str_extract(test$name, "Mlle"))] <- "Miss"
 test$sex.name[!is.na(str_extract(test$name, "Capt"))] <- "Mr"
 test$sex.name[!is.na(str_extract(test$name, "Major"))] <- "Mr"
 test$sex.name[!is.na(str_extract(test$name, "Col"))] <- "Mr"
-test$sex.name[!is.na(str_extract(test$name, "Master"))] <- "Mr"
+test$sex.name[!is.na(str_extract(test$name, "Master"))] <- "Mast"
 test$sex.name[!is.na(str_extract(test$name, "Rev"))] <- "Mr"
 test$sex.name[!is.na(str_extract(test$name, "Dr"))] <- "Mr"
 test$sex.name[!is.na(str_extract(test$name, "Don"))] <- "Mr"
@@ -159,6 +159,8 @@ test$family[which(test$sibsp != 0 | test$parch != 0)] <- 1
 test$family[which(test$sibsp == 0 & test$parch == 0)] <- 0
 test$family <- factor(test$family)
 train$family <- factor(train$family)
+test$familia <- test$sibsp + test$parch
+train$familia <- train$sibsp + train$parch
 
 ### 
 ###  Scale the non factors
@@ -177,6 +179,10 @@ test$fare_scale <- (test$fare-min(test$fare))/(max(test$fare-min(test$fare)))
 # Open .RData with load()
 save("test", file = "Data/test_clean.RData")
 save("train", file = "Data/train_clean.RData")
+
+## Save the empty age data
+save("test", file = "Data/test_clean_age.RData")
+save("train", file = "Data/train_clean_age.RData")
 
 # Save as ARFF for WEKA using foreign
 write.arff(test, file = "Data/test_clean.ARFF")
